@@ -4,15 +4,12 @@
     <title>Chicago Architecture</title>
 </head>
 <body>
-    <!-- First message that welcomes the readers -->
-    <p th:text="${message}"></p>
-
-    <!-- List of sights in Millennium Park -->
-    <h2>Millennium Park</h2>
+    <!-- List of areas to chose from -->
+    <h2>Chicago Districts</h2>
     <ul>
-        <li th:each="location : ${millenniumPark}"
-            th:text="${location}">
-            Area Placeholder
+        <li th:each="district: ${chicagoDistricts}">
+            <a th:text="${district.key}"
+               th:href="@{${district.value}}"></a>
         </li>
     </ul>
 
