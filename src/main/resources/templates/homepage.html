@@ -7,6 +7,15 @@
     <!-- First message that welcomes the readers -->
     <p th:text="${message}"></p>
 
+    <!-- List of sights in Millennium Park -->
+    <h2>Millennium Park</h2>
+    <ul>
+        <li th:each="location : ${millenniumPark}"
+            th:text="${location}">
+            Area Placeholder
+        </li>
+    </ul>
+
     <!-- Basic information about the website and myself -->
     <h1>What is this website?</h1>
     <p>This website is your ultimate guide to exploring 200 of Chicago's most
