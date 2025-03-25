@@ -50,6 +50,8 @@ public class HomepageController {
         return "/chicagoDistricts/south_side";
     }
 
+    // Try creating another controller and moving this code to
+    // the SuburbDistrictController.java file
     @GetMapping("suburbs")
     public String suburbDistrict() {
         return "/chicagoDistricts/suburbs";
