@@ -10,9 +10,8 @@ import java.util.List;
 @Controller
 public class HomepageController {
 
-    // First page that users see when they load the website
     @GetMapping("/")
-    public String homePage(Model model) {
+    public String homepage(Model model) {
         model.addAttribute("message", "Welcome to Chicago Architecture");
 
         List<String> downtownMillenniumPark = Arrays.asList(
@@ -30,10 +29,5 @@ public class HomepageController {
         model.addAttribute("millenniumPark", downtownMillenniumPark);
 
         return "homepage";
-    }
-
-    @GetMapping("/about")
-    public String aboutPage() {
-        return "about";
     }
 }
