@@ -40,21 +40,14 @@ public class HomepageController {
         return "/chicagoDistricts/north_side";
     }
 
-    @GetMapping("west_side")
+    @GetMapping("/west_side")
     public String westSideDistrict() {
         return "/chicagoDistricts/west_side";
     }
 
-    @GetMapping("south_side")
+    @GetMapping("/south_side")
     public String southSideDistrict() {
         return "/chicagoDistricts/south_side";
-    }
-
-    // Try creating another controller and moving this code to
-    // the SuburbDistrictController.java file
-    @GetMapping("suburbs")
-    public String suburbDistrict() {
-        return "/chicagoDistricts/suburbs";
     }
 
 }

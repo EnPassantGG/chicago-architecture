@@ -4,17 +4,14 @@
     <title>Chicago Architecture</title>
 </head>
 <body>
-    <!-- List of areas to chose from -->
     <h2>Chicago Districts</h2>
     <ul>
         <li th:each="district: ${chicagoDistricts}">
-            <a th:text="${district.key}"
-               th:href="@{${district.value}}"></a>
+            <a th:href="@{${district.value}}"
+               th:text="${district.key}"></a>
         </li>
     </ul>
 
-    <!-- Link to the about page -->
     <a href="/about" th:href="@{/about}">About</a>
-
 </body>
 </html>

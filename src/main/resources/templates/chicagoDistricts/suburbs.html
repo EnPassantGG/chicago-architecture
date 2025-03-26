@@ -7,5 +7,13 @@
 
 <body>
     <h1>Suburbs!</h1>
+    <h2>Subsections in the suburbs</h2>
+    <!-- Have to use the formatting @{/example/{PLACEHOLDER}(PLACEHOLDER=${hashmap.value})} -->
+    <ul>
+        <li th:each="subDistrict: ${suburbsSubDistricts}">
+            <a th:href="@{/suburbs/{subDistrict}(subDistrict=${subDistrict.value})}"
+               th:text="${subDistrict.key}"></a>
+        </li>
+    </ul>
 </body>
 </html>
