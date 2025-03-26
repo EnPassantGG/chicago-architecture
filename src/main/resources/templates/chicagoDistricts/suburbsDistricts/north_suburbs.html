@@ -7,12 +7,6 @@
 
 <body>
     <h1>Suburbs - North Suburbs!</h1>
-    <ol>
-        <li th:each="architectualElement : ${northSuburbsArchitecture}">
-            <p th:text="${architectualElement}"></p>
-        </li>
-    </ol>
-    <h1>Listing buildings using Java classes</h1>
     <ol th:number="1">
         <li th:each="building : ${buildings}">
             <p th:text="${building.getName()}"></p>

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -31,25 +32,18 @@ public class SuburbDistrictController {
     @GetMapping("/north_suburbs")
     public String suburbNorthSuburbs(Model model) {
 
-        String[] northSuburbsArchitecture = {
-            "Shure Corporate Headquarters",
-            "Levy Senior Center",
-            "Jewish Reconstructionist Congregation",
-            "Optima Horizons",
-            "Segal Visitors Center",
-            "Ryan Center for the Musical Arts",
-            "Kellogg School of Management Global Hub",
-            "Optima Old Orchard Woods",
-            "Illinois Holocaust Museum & Education Center",
-            "Lipton Thayer House",
-            "Wilmette Residence",
-            "Glass House & 7RR Eco-Home",
-            "Crate & Barrel Headquarters",
-            "Writers Theatre",
-            "Daniel F. and Ada L. Rice Plant Science Conservation Center",
-            "Ravinia Festival Dining Pavilion",
-            "Ragdale Meadow Studio",
-        };
+        List<Building> buildings = initializeNorthSuburbsBuildings();
+        model.addAttribute("buildings", buildings);
+
+        return "/chicagoDistricts/suburbsDistricts/north_suburbs";
+    }
+
+    @GetMapping("/northwest_and_west_suburbs")
+    public String suburbNorthwestAndWestSuburbs() {
+        return "/chicagoDistricts/suburbsDistricts/northwest_and_west_suburbs";
+    }
+
+    private static List<Building> initializeNorthSuburbsBuildings() {
 
         Building n177 = new Building("Shure Corporate Headquarters", "5800 West Touhy Avenue",
                 "Niles", 2004);
@@ -86,35 +80,8 @@ public class SuburbDistrictController {
         Building n193 = new Building("Ragdale Meadow Studio", "1260 Green Bay Road",
                 "Lake Forest", 2008);
 
-        List<Building> buildings = new ArrayList<>();
-        buildings.add(n177);
-        buildings.add(n178);
-        buildings.add(n179);
-        buildings.add(n180);
-        buildings.add(n181);
-        buildings.add(n182);
-        buildings.add(n183);
-        buildings.add(n184);
-        buildings.add(n185);
-        buildings.add(n186);
-        buildings.add(n187);
-        buildings.add(n188);
-        buildings.add(n189);
-        buildings.add(n190);
-        buildings.add(n191);
-        buildings.add(n192);
-        buildings.add(n193);
-
-
-        model.addAttribute("northSuburbsArchitecture", northSuburbsArchitecture);
-        model.addAttribute("buildings", buildings);
-
-        return "/chicagoDistricts/suburbsDistricts/north_suburbs";
-    }
-
-    @GetMapping("/northwest_and_west_suburbs")
-    public String suburbNorthwestAndWestSuburbs() {
-        return "/chicagoDistricts/suburbsDistricts/northwest_and_west_suburbs";
+        return new ArrayList<>(Arrays.asList(n177, n178, n179, n180, n181, n182, n183, n184, n185, n186,
+                n187, n188, n189, n190, n191, n192, n193));
     }
 
 }
