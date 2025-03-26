@@ -3,24 +3,21 @@ package com.example.chicagoarchitecture.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.LinkedHashMap;
 
 @Controller
+@RequestMapping("/suburbs")
 public class SuburbDistrictController {
 
     // Main section pertaining the suburbs
-    @GetMapping("/suburbs")
+    @GetMapping
     public String suburbDistrict(Model model) {
 
         LinkedHashMap<String, String> suburbsSubDistricts = new LinkedHashMap<>();
         suburbsSubDistricts.put("North Suburbs", "north_suburbs");
         suburbsSubDistricts.put("Northwest and West Suburbs", "northwest_and_west_suburbs");
-
-        for (String keyValue : suburbsSubDistricts.keySet()) {
-            System.out.println("Key: " + keyValue);
-            System.out.println("Value: " + suburbsSubDistricts.get(keyValue));
-        }
 
         model.addAttribute("suburbsSubDistricts", suburbsSubDistricts);
 
@@ -28,14 +25,37 @@ public class SuburbDistrictController {
     }
 
     // 2 subsections of the suburbs
-    @GetMapping("/suburbs/north_suburbs")
-    public String suburbNorthSuburbs() {
-        return "/chicagoDistricts/suburbsSubDistricts/north_suburbs";
+    @GetMapping("/north_suburbs")
+    public String suburbNorthSuburbs(Model model) {
+
+        String[] northSuburbsArchitecture = {
+            "Shure Corporate Headquarters",
+            "Levy Senior Center",
+            "Jewish Reconstructionist Congregation",
+            "Optima Horizons",
+            "Segal Visitors Center",
+            "Ryan Center for the Musical Arts",
+            "Kellogg School of Management Global Hub",
+            "Optima Old Orchard Woods",
+            "Illinois Holocaust Museum & Education Center",
+            "Lipton Thayer House",
+            "Wilmette Residence",
+            "Glass House & 7RR Eco-Home",
+            "Crate & Barrel Headquarters",
+            "Writers Theatre",
+            "Daniel F. and Ada L. Rice Plant Science Conservation Center",
+            "Ravinia Festival Dining Pavilion",
+            "Ragdale Meadow Studio",
+        };
+
+        model.addAttribute("northSuburbsArchitecture", northSuburbsArchitecture);
+
+        return "/chicagoDistricts/suburbsDistricts/north_suburbs";
     }
 
-    @GetMapping("/suburbs/northwest_and_west_suburbs")
+    @GetMapping("/northwest_and_west_suburbs")
     public String suburbNorthwestAndWestSuburbs() {
-        return "/chicagoDistricts/suburbsSubDistricts/northwest_and_west_suburbs";
+        return "/chicagoDistricts/suburbsDistricts/northwest_and_west_suburbs";
     }
 
 }
