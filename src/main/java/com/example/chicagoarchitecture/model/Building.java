@@ -21,6 +21,7 @@ public class Building {
     @Column(name = "creation_year")
     private int creationYear;
 
+
     public Building(String name, String address, String city, int creationYear) {
         this.name = name;
         this.address = address;
@@ -29,6 +30,7 @@ public class Building {
     }
 
     public Building() {}
+
 
     public String getName() {
         return name;
@@ -61,6 +63,7 @@ public class Building {
     public void setCreationYear(int creationYear) {
         this.creationYear = creationYear;
     }
+
 
     @Override
     public String toString() {
