@@ -19,6 +19,10 @@ public class BuildingDAO {
         return buildingRepository.findAll();
     }
 
+    public List<Building> getBuildingsFromDistrict(String district) {
+        return buildingRepository.findByDistrict(district);
+    }
+
     public void saveBuilding(Building building) {
         buildingRepository.save(building);
     }

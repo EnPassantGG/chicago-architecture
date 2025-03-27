@@ -21,12 +21,16 @@ public class Building {
     @Column(name = "creation_year")
     private int creationYear;
 
+    @Column(name = "district")
+    private String district;
 
-    public Building(String name, String address, String city, int creationYear) {
+
+    public Building(String name, String address, String city, int creationYear, String district) {
         this.name = name;
         this.address = address;
         this.city = city;
         this.creationYear = creationYear;
+        this.district = district;
     }
 
     public Building() {}
@@ -64,13 +68,24 @@ public class Building {
         this.creationYear = creationYear;
     }
 
+    public String getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(String district) {
+        this.district = district;
+    }
+
 
     @Override
     public String toString() {
         return "Building{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
                 ", creationYear=" + creationYear +
+                ", district='" + district + '\'' +
                 '}';
     }
 }
