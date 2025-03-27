@@ -5,5 +5,6 @@ CREATE TABLE IF NOT EXISTS building (
     address VARCHAR(255) NOT NULL,
     city VARCHAR(255) NOT NULL,
     creation_year INT NOT NULL,
-    district VARCHAR(255) NOT NULL
+    district VARCHAR(255) NOT NULL,
+    is_endorsed BOOLEAN DEFAULT FALSE
 )

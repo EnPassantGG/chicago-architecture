@@ -15,12 +15,12 @@ public class BuildingDAO {
         this.buildingRepository = buildingRepository;
     }
 
-    public List<Building> getAllBuildings() {
-        return buildingRepository.findAll();
-    }
-
     public List<Building> getBuildingsFromDistrict(String district) {
         return buildingRepository.findByDistrict(district);
+    }
+
+    public List<Building> getRecommendations() {
+        return buildingRepository.findRecommendations();
     }
 
     public void saveBuilding(Building building) {

@@ -24,13 +24,18 @@ public class Building {
     @Column(name = "district")
     private String district;
 
+    @Column(name = "is_endorsed",
+            columnDefinition = "BOOLEAN DEFAULT FALSE")
+    private boolean isEndorsed;
 
-    public Building(String name, String address, String city, int creationYear, String district) {
+
+    public Building(String name, String address, String city, int creationYear, String district, boolean isEndorsed) {
         this.name = name;
         this.address = address;
         this.city = city;
         this.creationYear = creationYear;
         this.district = district;
+        this.isEndorsed = isEndorsed;
     }
 
     public Building() {}
@@ -76,6 +81,14 @@ public class Building {
         this.district = district;
     }
 
+    public boolean isEndorsed() {
+        return isEndorsed;
+    }
+
+    public void setEndorsed(boolean endorsed) {
+        isEndorsed = endorsed;
+    }
+
 
     @Override
     public String toString() {
@@ -86,6 +99,7 @@ public class Building {
                 ", city='" + city + '\'' +
                 ", creationYear=" + creationYear +
                 ", district='" + district + '\'' +
+                ", isEndorsed=" + isEndorsed +
                 '}';
     }
 }

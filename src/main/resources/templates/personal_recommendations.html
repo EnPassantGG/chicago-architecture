@@ -8,5 +8,13 @@
     <p>This is the section where I tell you about cool locations not mentioned in
        the book. I found these on my own time and I hope that you enjoy them as
        much as me!</p>
+    <ol th:number="1">
+        <li th:each="building : ${buildings}">
+            <p th:text="${building.getName()}"></p>
+            <p th:text="${building.getAddress() + ', ' +
+                          building.getCity() + ' (' +
+                          building.getCreationYear() + ')'}"></p>
+        </li>
+    </ol>
 </body>
 </html>

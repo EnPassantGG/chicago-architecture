@@ -1,13 +1,22 @@
 package com.example.chicagoarchitecture.controller;
 
+import com.example.chicagoarchitecture.model.Building;
+import com.example.chicagoarchitecture.service.BuildingDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 
 @Controller
 public class HomepageController {
+
+    private final BuildingDAO buildingDAO;
+
+    public HomepageController(BuildingDAO buildingDAO) {
+        this.buildingDAO = buildingDAO;
+    }
 
     @GetMapping("/")
     public String homePage(Model model) {
@@ -52,7 +61,10 @@ public class HomepageController {
     }
 
     @GetMapping("/personal_recommendations")
-    public String personalFindingsPage() {
+    public String personalFindingsPage(Model model) {
+        List<Building> buildings = buildingDAO.getRecommendations();
+        model.addAttribute("buildings", buildings);
+
         return "personal_recommendations";
     }
 

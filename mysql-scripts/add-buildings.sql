@@ -56,5 +56,12 @@ INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, di
 VALUES ("Trumpf Smart Factory", "1900 West Central Road", "Hoffman Estates", 2009, "northwest_and_west_suburbs");
 
 
+-- Personal Reccomendations
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, is_endorsed)
+VALUES ("Lee Street Beach", "1111 Lake Shore Blvd", "Evanston", 1200000000, "north_suburbs", TRUE);
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, is_endorsed)
+VALUES ("Northwestern University Rebecca Crown Center", "633 Clark St", "Evanston", 1968, "north_suburbs", TRUE);
+
+
 -- Show everything that was added
 SELECT * FROM chicagoarchitecture.building;
