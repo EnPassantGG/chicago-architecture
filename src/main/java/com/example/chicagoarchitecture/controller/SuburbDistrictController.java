@@ -28,7 +28,6 @@ public class SuburbDistrictController {
         LinkedHashMap<String, String> suburbsSubDistricts = new LinkedHashMap<>();
         suburbsSubDistricts.put("North Suburbs", "north_suburbs");
         suburbsSubDistricts.put("Northwest and West Suburbs", "northwest_and_west_suburbs");
-
         model.addAttribute("suburbsSubDistricts", suburbsSubDistricts);
 
         return "/chicagoDistricts/suburbs";
@@ -60,6 +59,7 @@ public class SuburbDistrictController {
                 "Evanston", 2004);
         Building n181 = new Building("Segal Visitors Center", "1841 Sheridan Road",
                 "Evanston", 2014);
+
         Building n182 = new Building("Ryan Center for the Musical Arts", "70 Arts Circle Drive",
                 "Evanston", 2015);
         Building n183 = new Building("Kellogg School of Management Global Hub", "2211 Campus Drive",
@@ -70,6 +70,7 @@ public class SuburbDistrictController {
                 "Skokie", 2009);
         Building n186 = new Building("Lipton Thayer House", "2600 Thayer Street",
                 "Evanston", 2018);
+
         Building n187 = new Building("Wilmette Residence", "1019 Linden Avenue",
                 "Wilmette", 2016);
         Building n188 = new Building("Glass House & 7RR Eco-Home", "Rolling Ridge Lane",
@@ -80,6 +81,7 @@ public class SuburbDistrictController {
                 "Glencoe", 2016);
         Building n191 = new Building("Daniel F. and Ada L. Rice Plant Science Conservation Center", "1000 Lake Cook Road",
                 "Glencoe", 2009);
+
         Building n192 = new Building("Ravinia Festival Dining Pavilion", "418 Sheridan Road",
                 "Glencoe", 2007);
         Building n193 = new Building("Ragdale Meadow Studio", "1260 Green Bay Road",
