@@ -11,7 +11,6 @@ public class HomepageController {
 
     @GetMapping("/")
     public String homePage(Model model) {
-
         // List of Chicago districts with respective webpages
         LinkedHashMap<String, String> chicagoDistricts = new LinkedHashMap<>();
         chicagoDistricts.put("Downtown", "downtown");

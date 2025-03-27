@@ -1,10 +1,24 @@
 package com.example.chicagoarchitecture.model;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Building {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "address")
     private String address;
+
+    @Column(name = "city")
     private String city;
+
+    @Column(name = "creation_year")
     private int creationYear;
 
     public Building(String name, String address, String city, int creationYear) {
@@ -13,6 +27,8 @@ public class Building {
         this.city = city;
         this.creationYear = creationYear;
     }
+
+    public Building() {}
 
     public String getName() {
         return name;

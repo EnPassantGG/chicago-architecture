@@ -18,7 +18,6 @@ public class SuburbDistrictController {
     // Main section pertaining the suburbs
     @GetMapping
     public String suburbDistrict(Model model) {
-
         LinkedHashMap<String, String> suburbsSubDistricts = new LinkedHashMap<>();
         suburbsSubDistricts.put("North Suburbs", "north_suburbs");
         suburbsSubDistricts.put("Northwest and West Suburbs", "northwest_and_west_suburbs");
@@ -31,7 +30,6 @@ public class SuburbDistrictController {
     // 2 subsections of the suburbs
     @GetMapping("/north_suburbs")
     public String suburbNorthSuburbs(Model model) {
-
         List<Building> buildings = initializeNorthSuburbsBuildings();
         model.addAttribute("buildings", buildings);
 
