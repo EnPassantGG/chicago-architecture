@@ -13,10 +13,10 @@ public class HomepageController {
     public String homePage(Model model) {
         // List of Chicago districts with respective webpages
         LinkedHashMap<String, String> chicagoDistricts = new LinkedHashMap<>();
-        chicagoDistricts.put("Downtown", "downtown");
-        chicagoDistricts.put("North Side", "north_side");
-        chicagoDistricts.put("West Side", "west_side");
-        chicagoDistricts.put("South Side", "south_side");
+        chicagoDistricts.put("Downtown (coming soon)", "downtown");
+        chicagoDistricts.put("North Side (coming soon)", "north_side");
+        chicagoDistricts.put("West Side (coming soon)", "west_side");
+        chicagoDistricts.put("South Side (coming soon)", "south_side");
         chicagoDistricts.put("Suburbs", "suburbs");
 
         model.addAttribute("chicagoDistricts", chicagoDistricts);
@@ -24,10 +24,6 @@ public class HomepageController {
         return "homepage";
     }
 
-    @GetMapping("/about")
-    public String aboutPage() {
-        return "about";
-    }
 
     @GetMapping("/downtown")
     public String downtownDistrict() {
@@ -47,6 +43,17 @@ public class HomepageController {
     @GetMapping("/south_side")
     public String southSideDistrict() {
         return "/chicagoDistricts/south_side";
+    }
+
+
+    @GetMapping("/about")
+    public String aboutPage() {
+        return "about";
+    }
+
+    @GetMapping("/personal_recommendations")
+    public String personalFindingsPage() {
+        return "personal_recommendations";
     }
 
 }
