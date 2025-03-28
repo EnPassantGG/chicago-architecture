@@ -24,7 +24,6 @@ public class HomepageController {
     public String homePage(Model model) {
         // Used for drop-down searching
         List<String> cities = buildingDAO.getDistinctCities();
-        for (String city : cities) System.out.println(city);
         model.addAttribute("cities", cities);
 
         // List of Chicago districts with respective webpages
