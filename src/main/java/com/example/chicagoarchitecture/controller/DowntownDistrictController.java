@@ -48,4 +48,28 @@ public class DowntownDistrictController {
 
         return "/chicagoDistricts/downtownDistricts/lakeshore_east";
     }
+
+    @GetMapping("/the_loop_east")
+    public String downtownTheLoopEast(Model model) {
+        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("the_loop_east");
+        model.addAttribute("buildings", buildings);
+
+        return "/chicagoDistricts/downtownDistricts/the_loop_east";
+    }
+
+    @GetMapping("/the_loop_west")
+    public String downtownTheLoopWest(Model model) {
+        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("the_loop_west");
+        model.addAttribute("buildings", buildings);
+
+        return "/chicagoDistricts/downtownDistricts/the_loop_west";
+    }
+
+    @GetMapping("/south_loop_and_chinatown")
+    public String downtownSouthLoopAndChinatown(Model model) {
+        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("south_loop_and_chinatown");
+        model.addAttribute("buildings", buildings);
+
+        return "/chicagoDistricts/downtownDistricts/south_loop_and_chinatown";
+    }
 }
