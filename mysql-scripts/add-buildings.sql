@@ -1,3 +1,29 @@
+-- Downtown: Millennium Park
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
+VALUES 
+    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park"),
+    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park"),
+    ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park"),
+    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park"),
+    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park"),
+    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park"),
+    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park"),
+    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park"),
+    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park"),
+    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park");
+    
+    
+-- Downtown: Lakeshore East
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
+VALUES 
+    ("Blue Cross-Blue Shield Tower", "300 East Randolph Street", "Chicago", "2010", "lakeshore_east"),
+    ("340 on the Park", "340 East Randolph Street", "Chicago", "2007", "lakeshore_east"),
+    ("The Park at Lakeshore East", "405 East Benton Place", "Chicago", "2005", "lakeshore_east"),
+    ("Aqua Tower", "225 North Columbus Drive", "Chicago", "2010", "lakeshore_east"),
+    ("Gems World Academy", "350 East South Water Street", "Chicago", "2020", "lakeshore_east"),
+    ("Coast at Lakeshore East", "345 East Wacker Drive", "Chicago", "2013", "lakeshore_east"),
+    ("St. Regis Chicago", "363 East Wacker Drive", "Chicago", "2020", "lakeshore_east");
+    
 -- Suburbs: North Suburbs
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
 VALUES 
