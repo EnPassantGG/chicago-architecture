@@ -23,7 +23,11 @@ public class BuildingDAO {
         return buildingRepository.findRecommendations();
     }
 
-    public void saveBuilding(Building building) {
-        buildingRepository.save(building);
+    public List<String> getDistinctCities() {
+        return buildingRepository.findDistinctCities();
+    }
+
+    public List<Building> getBuildingsByCity(String city) {
+        return buildingRepository.findByCity(city);
     }
 }
