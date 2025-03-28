@@ -22,7 +22,7 @@ public interface BuildingRepository extends JpaRepository<Building, Long> {
     @Query(value = "SELECT DISTINCT city FROM building ORDER BY city", nativeQuery = true)
     List<String> findDistinctCities();
 
-    @Query(value = "SELECT * FROM building WHERE city = :city", nativeQuery = true)
+    @Query(value = "SELECT * FROM building WHERE city = :city ORDER BY name", nativeQuery = true)
     List<Building> findByCity(@Param("city") String city);
 
 }

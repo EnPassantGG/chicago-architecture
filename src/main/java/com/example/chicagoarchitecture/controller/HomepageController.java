@@ -56,18 +56,10 @@ public class HomepageController {
     }
 
 
-//    @GetMapping("/search")
-//    public String searchForm(Model model) {
-//        List<String> cities = buildingDAO.getDistinctCities();
-//        for (String city : cities) System.out.println(city);
-//        model.addAttribute("cities", cities);
-//
-//        return "search";
-//    }
-
     @PostMapping("/search")
     public String searchResult(@RequestParam("city") String city, Model model) {
         List<Building> results = buildingDAO.getBuildingsByCity(city);
+        model.addAttribute("city", city);
         model.addAttribute("results", results);
 
         return "result";
