@@ -37,39 +37,48 @@ public class DowntownDistrictController {
     public String downtownMillenniumPark(Model model) {
         List<Building> buildings = buildingDAO.getBuildingsFromDistrict("millennium_park");
         model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", "Millennium Park");
+        model.addAttribute("pageHeader", "Downtown - Millennium Park");
 
-        return "/chicagoDistricts/downtownDistricts/millennium_park";
+        return "generic-page";
     }
 
     @GetMapping("/lakeshore_east")
     public String downtownLakeshoreEast(Model model) {
         List<Building> buildings = buildingDAO.getBuildingsFromDistrict("lakeshore_east");
         model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", "Lakeshore East");
+        model.addAttribute("pageHeader", "Downtown - Lakeshore East");
 
-        return "/chicagoDistricts/downtownDistricts/lakeshore_east";
+        return "generic-page";
     }
 
     @GetMapping("/the_loop_east")
     public String downtownTheLoopEast(Model model) {
         List<Building> buildings = buildingDAO.getBuildingsFromDistrict("the_loop_east");
         model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", "The Loop East");
+        model.addAttribute("pageHeader", "Downtown - The Loop East");
 
-        return "/chicagoDistricts/downtownDistricts/the_loop_east";
+        return "generic-page";
     }
 
     @GetMapping("/the_loop_west")
     public String downtownTheLoopWest(Model model) {
         List<Building> buildings = buildingDAO.getBuildingsFromDistrict("the_loop_west");
         model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", "The Loop West");
+        model.addAttribute("pageHeader", "Downtown - The Loop West");
 
-        return "/chicagoDistricts/downtownDistricts/the_loop_west";
+        return "generic-page";
     }
 
     @GetMapping("/south_loop_and_chinatown")
     public String downtownSouthLoopAndChinatown(Model model) {
         List<Building> buildings = buildingDAO.getBuildingsFromDistrict("south_loop_and_chinatown");
-        model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", "South Loop and Chinatown");
+        model.addAttribute("pageHeader", "Downtown - South Loop and Chinatown");
 
-        return "/chicagoDistricts/downtownDistricts/south_loop_and_chinatown";
+        return "generic-page";
     }
 }

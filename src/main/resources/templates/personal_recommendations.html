@@ -23,10 +23,11 @@
                           building.getCreationYear() + ')'}"></p>
 
             <!-- 3rd line: Building/Location image (if applicable) -->
-            <img th:src="@{${building.getImagePath()}}"
-                 style="width: 300px; height: auto; border: 1px solid black"
-                 alt="Building Image">
-
+            <span>
+                <img th:src="@{${building.getImagePath()}}"
+                     style="width: 300px; height: auto; border: 1px solid black"
+                     alt="Building Image">
+            </span>
         </li>
     </ol>
 </body>
