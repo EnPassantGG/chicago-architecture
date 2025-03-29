@@ -1,8 +1,8 @@
 -- Downtown: Millennium Park
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", "/images/reccomendations/lee-street-beach.jpg"),
-    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", NULL),
+    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", NULL),
+    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", "/images/millenniumPark/cloud-gate.jpeg"),
     ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park", NULL),
     ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", NULL),
     ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", NULL),
