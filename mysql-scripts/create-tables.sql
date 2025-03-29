@@ -6,5 +6,6 @@ CREATE TABLE IF NOT EXISTS building (
     city VARCHAR(255) NOT NULL,
     creation_year INT NOT NULL,
     district VARCHAR(255) NOT NULL,
+    image_path VARCHAR(255) DEFAULT NULL,
     is_endorsed BOOLEAN DEFAULT FALSE
 )

@@ -1,16 +1,16 @@
 -- Downtown: Millennium Park
-INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park"),
-    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park"),
-    ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park"),
-    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park"),
-    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park"),
-    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park"),
-    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park"),
-    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park"),
-    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park"),
-    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park");
+    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", "/images/reccomendations/lee-street-beach.jpg"),
+    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", NULL),
+    ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park", NULL),
+    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", NULL),
+    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", NULL),
+    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", NULL),
+    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", NULL),
+    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park", NULL),
+    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", NULL),
+    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", NULL);
     
     
 -- Downtown: Lakeshore East
@@ -108,10 +108,10 @@ VALUES
 
 
 -- Personal Reccomendations
-INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, is_endorsed)
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path, is_endorsed)
 VALUES 
-    ("Lee Street Beach", "1111 Lake Shore Blvd", "Evanston", 1200000000, "north_suburbs", TRUE),
-    ("Northwestern University Rebecca Crown Center", "633 Clark St", "Evanston", 1968, "north_suburbs", TRUE);
+    ("Lee Street Beach", "1111 Lake Shore Blvd", "Evanston", 1200000000, "north_suburbs", "/images/reccomendations/lee-street-beach.jpg", TRUE),
+    ("Northwestern University Rebecca Crown Center", "633 Clark St", "Evanston", 1968, "north_suburbs", "/images/reccomendations/rebecca-crown-center.jpg", TRUE);
 
 
 

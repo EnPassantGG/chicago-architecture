@@ -13,6 +13,9 @@
             <p th:text="${building.getAddress() + ', ' +
                               building.getCity() + ' (' +
                               building.getCreationYear() + ')'}"></p>
+            <img th:src="@{${building.getImagePath()}}"
+                 style="width: 300px; height: auto; border: 1px solid black"
+                 alt="Building Image">
         </li>
     </ol>
 </body>

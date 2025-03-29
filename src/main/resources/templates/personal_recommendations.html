@@ -4,16 +4,29 @@
     <title>Personal Findings</title>
 </head>
 <body>
+    <!-- Page introduction -->
     <h2>Personal Findings</h2>
     <p>This is the section where I tell you about cool locations not mentioned in
        the book. I found these on my own time and I hope that you enjoy them as
        much as me!</p>
+
+    <!-- Information about specific places -->
     <ol th:number="1">
         <li th:each="building : ${buildings}">
+
+            <!-- 1st line: Building/Location name -->
             <p th:text="${building.getName()}"></p>
+
+            <!-- 2nd line: Building/Location details -->
             <p th:text="${building.getAddress() + ', ' +
                           building.getCity() + ' (' +
                           building.getCreationYear() + ')'}"></p>
+
+            <!-- 3rd line: Building/Location image (if applicable) -->
+            <img th:src="@{${building.getImagePath()}}"
+                 style="width: 300px; height: auto; border: 1px solid black"
+                 alt="Building Image">
+
         </li>
     </ol>
 </body>
