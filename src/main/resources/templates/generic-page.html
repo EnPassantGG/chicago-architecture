@@ -6,12 +6,25 @@
 </head>
 <body>
     <h1 th:text="${pageHeader}">Default Header</h1>
+
+    <!-- Information about specific places -->
     <ol th:number="1">
         <li th:each="building : ${buildings}">
+
+            <!-- 1st line: Building/Location name -->
             <p th:text="${building.getName()}"></p>
+
+            <!-- 2nd line: Building/Location details -->
             <p th:text="${building.getAddress() + ', ' +
                                   building.getCity() + ' (' +
                                   building.getCreationYear() + ')'}"></p>
+
+            <!-- 3rd line: Building/Location image (if applicable) -->
+            <span th:if="${building.getImagePath() != null}">
+                <img th:src="@{${building.getImagePath()}}"
+                     style="width: 300px; height: auto; border: 1px solid black"
+                     alt="Building Image">
+            </span>
         </li>
     </ol>
 </body>

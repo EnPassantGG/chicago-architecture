@@ -57,11 +57,12 @@ public class HomepageController {
 
     @PostMapping("/search")
     public String searchResult(@RequestParam("city") String city, Model model) {
-        List<Building> results = buildingDAO.getBuildingsByCity(city);
-        model.addAttribute("city", city);
-        model.addAttribute("results", results);
+        List<Building> buildings = buildingDAO.getBuildingsByCity(city);
+        model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", "Search Results");
+        model.addAttribute("pageHeader", "Search Results");
 
-        return "result";
+        return "generic-page";
     }
 
     @GetMapping("/about")

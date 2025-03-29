@@ -14,64 +14,64 @@ VALUES
     
     
 -- Downtown: Lakeshore East
-INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Blue Cross-Blue Shield Tower", "300 East Randolph Street", "Chicago", "2010", "lakeshore_east"),
-    ("340 on the Park", "340 East Randolph Street", "Chicago", "2007", "lakeshore_east"),
-    ("The Park at Lakeshore East", "405 East Benton Place", "Chicago", "2005", "lakeshore_east"),
-    ("Aqua Tower", "225 North Columbus Drive", "Chicago", "2010", "lakeshore_east"),
-    ("Gems World Academy", "350 East South Water Street", "Chicago", "2020", "lakeshore_east"),
-    ("Coast at Lakeshore East", "345 East Wacker Drive", "Chicago", "2013", "lakeshore_east"),
-    ("St. Regis Chicago", "363 East Wacker Drive", "Chicago", "2020", "lakeshore_east");
+    ("Blue Cross-Blue Shield Tower", "300 East Randolph Street", "Chicago", "2010", "lakeshore_east", NULL),
+    ("340 on the Park", "340 East Randolph Street", "Chicago", "2007", "lakeshore_east", NULL),
+    ("The Park at Lakeshore East", "405 East Benton Place", "Chicago", "2005", "lakeshore_east", NULL),
+    ("Aqua Tower", "225 North Columbus Drive", "Chicago", "2010", "lakeshore_east", NULL),
+    ("Gems World Academy", "350 East South Water Street", "Chicago", "2020", "lakeshore_east", NULL),
+    ("Coast at Lakeshore East", "345 East Wacker Drive", "Chicago", "2013", "lakeshore_east", NULL),
+    ("St. Regis Chicago", "363 East Wacker Drive", "Chicago", "2020", "lakeshore_east", NULL);
     
 
 -- Downtown: The Loop (East)
-INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Chicago Architecture Center", "111 East Wacker Drive", "Chicago", "2018", "the_loop_east"),
-    ("Chicago Riverwalk", "Chicago River", "Chicago", "2016", "the_loop_east"),
-    ("The WIT", "201 North State Street", "Chicago", "2009", "the_loop_east"),
-    ("Block 37", "108 North State Street", "Chicago", "2016", "the_loop_east"),
-    ("CTA Washington/Wabash Station", "Wabash Avenue at Washington Street", "Chicago", "2010", "the_loop_east"),
-    ("The Legacy at Millennium Park", "60 East Monroe Street", "Chicago", "2010", "the_loop_east"),
-    ("11 West Quincy Court Federal Building", "11 West Quincy Street", "Chicago", "2012", "the_loop_east"),
-    ("Rossevelt University Academic, Student Life and Residence Center", "450 South Wabash Avenue", "Chicago", "2012", "the_loop_east");
+    ("Chicago Architecture Center", "111 East Wacker Drive", "Chicago", "2018", "the_loop_east", NULL),
+    ("Chicago Riverwalk", "Chicago River", "Chicago", "2016", "the_loop_east", NULL),
+    ("The WIT", "201 North State Street", "Chicago", "2009", "the_loop_east", NULL),
+    ("Block 37", "108 North State Street", "Chicago", "2016", "the_loop_east", NULL),
+    ("CTA Washington/Wabash Station", "Wabash Avenue at Washington Street", "Chicago", "2010", "the_loop_east", NULL),
+    ("The Legacy at Millennium Park", "60 East Monroe Street", "Chicago", "2010", "the_loop_east", NULL),
+    ("11 West Quincy Court Federal Building", "11 West Quincy Street", "Chicago", "2012", "the_loop_east", NULL),
+    ("Rossevelt University Academic, Student Life and Residence Center", "450 South Wabash Avenue", "Chicago", "2012", "the_loop_east", NULL);
     
     
 -- Downtown: The Loop (West)
-INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("One South Dearborn", "1 South Dearborn Street", "Chicago", "2005", "the_loop_west"),
-    ("235 Van Buren", "235 Van Buren Street", "Chicago", "2009", "the_loop_west"),
-    ("Hyatt Center", "71 South Wacker Drive", "Chicago", "2005", "the_loop_west"),
-    ("UBS Tower", "1 North Wacker Drive", "Chicago", "2001", "the_loop_west"),
-    ("111 South Wacker", "111 South Wacker Drive", "Chicago", "2005", "the_loop_west"),
-    ("155 North Wacker", "155 North Wacker Drive", "Chicago", "2009", "the_loop_west"),
-    ("CNA Center", "151 North Franklin Street", "Chicago", "2018", "the_loop_west"),
-    ("OneEleven", "111 West Wacker Drive", "Chicago", "2014", "the_loop_west"),
-    ("Riverbend", "333 North Canal Street", "Chicago", "2002", "the_loop_west"),
-    ("River Point", "444 West Lake Street", "Chicago", "2017", "the_loop_west"),
-    ("150 North Riverside", "150 North Riverside Plaza", "Chicago", "2018", "the_loop_west");
+    ("One South Dearborn", "1 South Dearborn Street", "Chicago", "2005", "the_loop_west", NULL),
+    ("235 Van Buren", "235 Van Buren Street", "Chicago", "2009", "the_loop_west", NULL),
+    ("Hyatt Center", "71 South Wacker Drive", "Chicago", "2005", "the_loop_west", NULL),
+    ("UBS Tower", "1 North Wacker Drive", "Chicago", "2001", "the_loop_west", NULL),
+    ("111 South Wacker", "111 South Wacker Drive", "Chicago", "2005", "the_loop_west", NULL),
+    ("155 North Wacker", "155 North Wacker Drive", "Chicago", "2009", "the_loop_west", NULL),
+    ("CNA Center", "151 North Franklin Street", "Chicago", "2018", "the_loop_west", NULL),
+    ("OneEleven", "111 West Wacker Drive", "Chicago", "2014", "the_loop_west", NULL),
+    ("Riverbend", "333 North Canal Street", "Chicago", "2002", "the_loop_west", NULL),
+    ("River Point", "444 West Lake Street", "Chicago", "2017", "the_loop_west", NULL),
+    ("150 North Riverside", "150 North Riverside Plaza", "Chicago", "2018", "the_loop_west", NULL);
     
     
 -- Downtown: South Loop & Chinatown
-INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Cook County Circuit Courthouse", "555 West Harrison Street", "Chicago", "2005", "south_loop_and_chinatown"),
-    ("William Jones College Preparatory High School", "700 South State Street", "Chicago", "2013", "south_loop_and_chinatown"),
-    ("Spertus Intitute", "610 South Michigan Avenue", "Chicago", "2007", "south_loop_and_chinatown"),
-    ("618 South Michigan Avenue Facade", "618 South Michigan Avenue", "Chicago", "2012", "south_loop_and_chinatown"),
-    ("Student Life Center for East-West University", "829 South Wabash Avenue", "Chicago", "2013", "south_loop_and_chinatown"),
-    ("Nema Chicago", "1200 South Indiana Avenue", "Chicago", "2019", "south_loop_and_chinatown"),
-    ("Soldier Field and North Burnham Park Redevelopment", "1410 Museum Campus Drive", "Chicago", "2003", "south_loop_and_chinatown"),
-    ("Northerly Island", "1521 South Linn White Drive", "Chicago", "2015", "south_loop_and_chinatown"),
-    ("Columbia College Chicago Media Production Center", "1600 South State Street", "Chicago", "2010", "south_loop_and_chinatown"),
-    ("Perspective Charter School Rodney D. Joslin Campus", "1930 South Archer Avenue", "Chicago", "2004", "south_loop_and_chinatown"),
-    ("CTA Cermak-McCormick Place Station", "12 East Cermak Road", "Chicago", "2015", "south_loop_and_chinatown"),
-    ("McCormick Place West", "Cermak Road", "Chicago", "2007", "south_loop_and_chinatown"),
-    ("Ping Tom Memorial Park Boathouse & Fieldhouse", "300 West 19th Street", "Chicago", "2013", "south_loop_and_chinatown"),
-    ("Chinese American Service League Kam L. Liu Building", "2141 South Tan Court", "Chicago", "2004", "south_loop_and_chinatown"),
-    ("Chinatown Branch Library", "2100 South Wentworth Avenue", "Chicago", "2015", "south_loop_and_chinatown");
+    ("Cook County Circuit Courthouse", "555 West Harrison Street", "Chicago", "2005", "south_loop_and_chinatown", NULL),
+    ("William Jones College Preparatory High School", "700 South State Street", "Chicago", "2013", "south_loop_and_chinatown", NULL),
+    ("Spertus Intitute", "610 South Michigan Avenue", "Chicago", "2007", "south_loop_and_chinatown", NULL),
+    ("618 South Michigan Avenue Facade", "618 South Michigan Avenue", "Chicago", "2012", "south_loop_and_chinatown", NULL),
+    ("Student Life Center for East-West University", "829 South Wabash Avenue", "Chicago", "2013", "south_loop_and_chinatown", NULL),
+    ("Nema Chicago", "1200 South Indiana Avenue", "Chicago", "2019", "south_loop_and_chinatown", NULL),
+    ("Soldier Field and North Burnham Park Redevelopment", "1410 Museum Campus Drive", "Chicago", "2003", "south_loop_and_chinatown", NULL),
+    ("Northerly Island", "1521 South Linn White Drive", "Chicago", "2015", "south_loop_and_chinatown", NULL),
+    ("Columbia College Chicago Media Production Center", "1600 South State Street", "Chicago", "2010", "south_loop_and_chinatown", NULL),
+    ("Perspective Charter School Rodney D. Joslin Campus", "1930 South Archer Avenue", "Chicago", "2004", "south_loop_and_chinatown", NULL),
+    ("CTA Cermak-McCormick Place Station", "12 East Cermak Road", "Chicago", "2015", "south_loop_and_chinatown", NULL),
+    ("McCormick Place West", "Cermak Road", "Chicago", "2007", "south_loop_and_chinatown", NULL),
+    ("Ping Tom Memorial Park Boathouse & Fieldhouse", "300 West 19th Street", "Chicago", "2013", "south_loop_and_chinatown", NULL),
+    ("Chinese American Service League Kam L. Liu Building", "2141 South Tan Court", "Chicago", "2004", "south_loop_and_chinatown", NULL),
+    ("Chinatown Branch Library", "2100 South Wentworth Avenue", "Chicago", "2015", "south_loop_and_chinatown", NULL);
     
 -- Suburbs: North Suburbs
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)

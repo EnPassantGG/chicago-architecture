@@ -76,6 +76,7 @@ public class DowntownDistrictController {
     @GetMapping("/south_loop_and_chinatown")
     public String downtownSouthLoopAndChinatown(Model model) {
         List<Building> buildings = buildingDAO.getBuildingsFromDistrict("south_loop_and_chinatown");
+        model.addAttribute("buildings", buildings);
         model.addAttribute("pageTitle", "South Loop and Chinatown");
         model.addAttribute("pageHeader", "Downtown - South Loop and Chinatown");
 
