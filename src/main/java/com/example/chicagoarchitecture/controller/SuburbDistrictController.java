@@ -5,6 +5,7 @@ import com.example.chicagoarchitecture.service.BuildingDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.LinkedHashMap;
@@ -31,21 +32,28 @@ public class SuburbDistrictController {
         return "/chicagoDistricts/suburbs";
     }
 
-    // 2 subsections of the suburbs
-    @GetMapping("/north_suburbs")
-    public String suburbNorthSuburbs(Model model) {
-        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("north_suburbs");
+    @GetMapping("/{district}")
+    public String downtown(Model model, @PathVariable String district) {
+        List<Building> buildings = buildingDAO.getBuildingsFromDistrict(district);
+        String pageTitle, pageHeader;
+
+        switch (district) {
+            case "north_suburbs" -> {
+                pageTitle = "North Suburbs";
+                pageHeader = "North Suburbs";
+            }
+            case "northwest_and_west_suburbs" -> {
+                pageTitle = "Northwest and West Suburbs";
+                pageHeader = "Suburbs - Northwest and West Suburbs";
+            }
+            default -> throw new IllegalArgumentException("Invalid district: " + district);
+        }
+
         model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", pageTitle);
+        model.addAttribute("pageHeader", pageHeader);
 
-        return "/chicagoDistricts/suburbsDistricts/north_suburbs";
-    }
-
-    @GetMapping("/northwest_and_west_suburbs")
-    public String suburbNorthwestAndWestSuburbs(Model model) {
-        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("northwest_and_west_suburbs");
-        model.addAttribute("buildings", buildings);
-
-        return "/chicagoDistricts/suburbsDistricts/northwest_and_west_suburbs";
+        return "generic-page";
     }
 
 }

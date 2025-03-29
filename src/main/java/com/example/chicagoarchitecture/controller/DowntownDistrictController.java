@@ -5,6 +5,7 @@ import com.example.chicagoarchitecture.service.BuildingDAO;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.LinkedHashMap;
@@ -33,53 +34,40 @@ public class DowntownDistrictController {
         return "/chicagoDistricts/downtown";
     }
 
-    @GetMapping("/millennium_park")
-    public String downtownMillenniumPark(Model model) {
-        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("millennium_park");
+    @GetMapping("/{district}")
+    public String downtown(Model model, @PathVariable String district) {
+        List<Building> buildings = buildingDAO.getBuildingsFromDistrict(district);
+        String pageTitle, pageHeader;
+
+        switch (district) {
+            case "millennium_park" -> {
+                pageTitle = "Millennium Park";
+                pageHeader = "Downtown - Millennium Park";
+            }
+            case "lakeshore_east" -> {
+                pageTitle = "Lakeshore East";
+                pageHeader = "Downtown - Lakeshore East";
+            }
+            case "the_loop_east" -> {
+                pageTitle = "The Loop East";
+                pageHeader = "Downtown - The Loop East";
+            }
+            case "the_loop_west" -> {
+                pageTitle = "The Loop West";
+                pageHeader = "Downtown - The Loop West";
+            }
+            case "south_loop_and_chinatown" -> {
+                pageTitle = "South Loop and Chinatown";
+                pageHeader = "Downtown - South Loop and Chinatown";
+            }
+            default -> throw new IllegalArgumentException("Invalid district: " + district);
+        }
+
         model.addAttribute("buildings", buildings);
-        model.addAttribute("pageTitle", "Millennium Park");
-        model.addAttribute("pageHeader", "Downtown - Millennium Park");
+        model.addAttribute("pageTitle", pageTitle);
+        model.addAttribute("pageHeader", pageHeader);
 
         return "generic-page";
     }
 
-    @GetMapping("/lakeshore_east")
-    public String downtownLakeshoreEast(Model model) {
-        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("lakeshore_east");
-        model.addAttribute("buildings", buildings);
-        model.addAttribute("pageTitle", "Lakeshore East");
-        model.addAttribute("pageHeader", "Downtown - Lakeshore East");
-
-        return "generic-page";
-    }
-
-    @GetMapping("/the_loop_east")
-    public String downtownTheLoopEast(Model model) {
-        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("the_loop_east");
-        model.addAttribute("buildings", buildings);
-        model.addAttribute("pageTitle", "The Loop East");
-        model.addAttribute("pageHeader", "Downtown - The Loop East");
-
-        return "generic-page";
-    }
-
-    @GetMapping("/the_loop_west")
-    public String downtownTheLoopWest(Model model) {
-        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("the_loop_west");
-        model.addAttribute("buildings", buildings);
-        model.addAttribute("pageTitle", "The Loop West");
-        model.addAttribute("pageHeader", "Downtown - The Loop West");
-
-        return "generic-page";
-    }
-
-    @GetMapping("/south_loop_and_chinatown")
-    public String downtownSouthLoopAndChinatown(Model model) {
-        List<Building> buildings = buildingDAO.getBuildingsFromDistrict("south_loop_and_chinatown");
-        model.addAttribute("buildings", buildings);
-        model.addAttribute("pageTitle", "South Loop and Chinatown");
-        model.addAttribute("pageHeader", "Downtown - South Loop and Chinatown");
-
-        return "generic-page";
-    }
 }
