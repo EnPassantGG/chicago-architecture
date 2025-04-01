@@ -73,6 +73,58 @@ VALUES
     ("Chinese American Service League Kam L. Liu Building", "2141 South Tan Court", "Chicago", "2004", "south_loop_and_chinatown", NULL),
     ("Chinatown Branch Library", "2100 South Wentworth Avenue", "Chicago", "2015", "south_loop_and_chinatown", NULL);
     
+
+-- North Side: River North
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Trump International Hotel & Tower", "401 North Wabash Avenue", "Chicago", "2009", "river_north", NULL),
+    ("Museum of Broadcast Communications", "360 North State Street", "Chicago", "2012", "river_north", NULL),
+    ("300 North LaSalle", "300 North LaSalle Street", "Chicago", "2009", "river_north", NULL),
+    ("Wolf Point", "343 West Wold Point Plaza", "Chicago", "2023", "river_north", NULL),
+    ("Contemporaine", "516 North WElls Street", "Chicago", "2004", "river_north", NULL),
+    ("McDonald's Chicago Flagship", "600 N. Clark Street", "Chicago", "2018", "river_north", NULL),
+    ("Erie on the Park", "510 West Erie Street", "Chicago", "2002", "river_north", NULL),
+    ("156 West Superior", "156 West Superior Street", "Chicago", "2006", "river_north", NULL),
+    ("The Godfrey Hotel", "127 West Huron Street", "Chicago", "2014", "river_north", NULL),
+    ("Poetry Foundation", "61 West Superior Street", "Chicago", "2011", "river_north", NULL);
+
+
+-- North Side: Streeterville
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Apple Michigan Avenue", "401 North Michigan Avenue", "Chicago", "2017", "streeterville", NULL),
+    ("Optima Chicago Center", "200 East Illinois Street", "Chicago", "2013", "streeterville", NULL),
+    ("600 North Fairbanks", "600 North Fairbanks Court", "Chicago", "2007", "streeterville", NULL),
+    ("One Bennett Park", "451 East Grand Avenue", "Chicago", "2019", "streeterville", NULL),
+    ("Navy Pier Pierscape", "600 East Grand Avenue", "Chicago", "2016", "streeterville", NULL),
+    ("The Yard at Chicago Shakespeare", "800 East Grand Avenue", "Chicago", "2017", "streeterville", NULL),
+    ("Simpson Querrey Biomedical Research Center", "303 East Superior Street", "Chicago", "2019", "streeterville", NULL),
+    ("Lurie Children's Hospital", "225 East Chicago Avenue", "Chicago", "2012", "streeterville", NULL),
+    ("Park Tower", "800 North Michigan Avenue", "Chicago", "2000", "streeterville", NULL),
+    ("Sofitel Hotel", "20 East Chestnut Street", "Chicago", "2002", "streeterville", NULL),
+    ("Fourth Presbyterian Church of Chicago", "126 East Chestnut Street", "Chicago", "2013", "streeterville", NULL);
+    
+
+-- North Side: Near North Side
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Jesse White Community Center & Field House", "410 West Chicago Avenue", "Chicago", "2014", "near_north_side", NULL),
+    ("Viceroy Chicago", "1118 North State Street", "Chicago", "2017", "near_north_side", NULL),
+    ("Walter Payton College Preparatory High School", "1034 North Wells Street", "Chicago", "2016", "near_north_side", NULL),
+    ("Schiff Residences", "1244 North Clybourn Street", "Chicago", "2007", "near_north_side", NULL),
+    ("Tower House", "1306 North Cleveland Avenue", "Chicago", "2001", "near_north_side", NULL),
+    ("Blackhawk on Halsted", "814 West Eastman Street", "Chicago", "2007", "near_north_side", NULL);
+    
+
+-- North Side: Lincoln Park
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Mohawk House", "1712 North Mohawk Street", "Chicago", "2015", "lincoln_park", NULL),
+    ("Seigle House", "1856 North Mohawk Street", "Chicago", "2008", "lincoln_park", NULL),
+    ("Orchard Willow", "1840 North Orchard Street", "Chicago", "2012", "lincoln_park", NULL),
+    ("Private Residence", "838 West Webster Avenue", "Chicago", "2005", "lincoln_park", NULL);
+
+
 -- Suburbs: North Suburbs
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district)
 VALUES 
