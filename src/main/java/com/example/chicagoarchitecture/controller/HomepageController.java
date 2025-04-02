@@ -39,10 +39,10 @@ public class HomepageController {
     }
 
 
-    @GetMapping("/north_side")
-    public String northSideDistrict() {
-        return "chicagoDistricts/north_side";
-    }
+//    @GetMapping("/north_side")
+//    public String northSideDistrict() {
+//        return "chicagoDistricts/north_side";
+//    }
 
     @GetMapping("/west_side")
     public String westSideDistrict() {
