@@ -41,17 +41,17 @@ public class HomepageController {
 
     @GetMapping("/north_side")
     public String northSideDistrict() {
-        return "/chicagoDistricts/north_side";
+        return "chicagoDistricts/north_side";
     }
 
     @GetMapping("/west_side")
     public String westSideDistrict() {
-        return "/chicagoDistricts/west_side";
+        return "chicagoDistricts/west_side";
     }
 
     @GetMapping("/south_side")
     public String southSideDistrict() {
-        return "/chicagoDistricts/south_side";
+        return "chicagoDistricts/south_side";
     }
 
 

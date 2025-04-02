@@ -31,7 +31,7 @@ public class DowntownDistrictController {
         downtownSubDistricts.put("South Loop & Chinatown", "south_loop_and_chinatown");
         model.addAttribute("downtownSubDistricts", downtownSubDistricts);
 
-        return "/chicagoDistricts/downtown";
+        return "chicagoDistricts/downtown";
     }
 
     @GetMapping("/{district}")

@@ -29,7 +29,7 @@ public class SuburbDistrictController {
         suburbsSubDistricts.put("Northwest and West Suburbs", "northwest_and_west_suburbs");
         model.addAttribute("suburbsSubDistricts", suburbsSubDistricts);
 
-        return "/chicagoDistricts/suburbs";
+        return "chicagoDistricts/suburbs";
     }
 
     @GetMapping("/{district}")
