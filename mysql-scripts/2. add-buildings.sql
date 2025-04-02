@@ -152,6 +152,35 @@ VALUES
     ("Rogers Park Montessori School", "1800 West Balmoral Avenue", "Chicago", "2016", "other_neighborhoods", NULL),
     ("Richard J. Klarchek Information Commons", "6501 North Kenmore Avenue", "Chicago", "2008", "other_neighborhoods", NULL),
     ("Institute of Environmental Sustainability", "6349 North Kenmore Avenue", "Chicago", "2013", "other_neighborhoods", NULL);
+    
+
+-- West side: first_chapter
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Independence Apartments and Branch Library", "4024 North Elston Avenue", "Chicago", "2019", "first_chapter", NULL),
+    ("Northeastern Illinois University El Centro Campus", "3390 North Avondale Avenue", "Chicago", "2014", "first_chapter", NULL),
+    ("Intrinsic School", "4540 West Belmont Avenue", "Chicago", "2014", "first_chapter", NULL),
+    ("Flexhouse", "2805 West Shakespeare Avenue", "Chicago", "2013", "first_chapter", NULL),
+    ("F10 House", "1919 North Keeler Avenue", "Chicago", "2004", "first_chapter", NULL),
+    ("Acero Roberto Clemente School", "2050 North Natchez Avenue", "Chicago", "2012", "first_chapter", NULL),
+    ("Oak Park Public Library", "834 West Lake Street", "Chicago", "2005", "first_chapter", NULL),
+    ("Christ the King Jesuit College Preparatory School", "5088 West Jackson Boulevard", "Chicago", "2010", "first_chapter", NULL),
+    ("By the Hand Club for Kids and Moving Everest Charter School", "415 North Laramie Avenue", "Chicago", "2015", "first_chapter", NULL),
+    ("Garfield Park Conservatory City Garden", "300 North Central Park Boulevard", "Chicago", "2007", "first_chapter", NULL),
+    ("Erie Elementary School", "1405 North Washtenaw Avenue", "Chicago", "2013", "first_chapter", NULL);
+    
+
+-- West side: second_chapter
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("The 606", "Bloomingdale Avenue", "Chicago", "2014", "second_chapter", NULL),
+    ("Leavitt Residence", "1804 North Leavitt Street", "Chicago", "2007", "second_chapter", NULL),
+    ("Finfrock House", "2318 North Oakley Avenue", "Chicago", "2008", "second_chapter", NULL),
+    ("Urban Sandbox", "1615 North Wolcott Avenue", "Chicago", "2009", "second_chapter", NULL),
+    ("1617 North Wolcott", "1617 North Wolcott Avenue", "Chicago", "2009", "second_chapter", NULL),
+    ("Wood House", "1736 North Wood Street", "Chicago", "2013", "second_chapter", NULL),
+    ("Chicago Townhouse", "1808 North Paulina Street", "Chicago", "2004", "second_chapter", NULL),
+    ("Fletcher Jones Audi", "1523 West North Avenue", "Chicago", "2010", "second_chapter", NULL);
 
 
 -- Suburbs: North Suburbs
