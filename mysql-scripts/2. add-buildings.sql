@@ -180,7 +180,92 @@ VALUES
     ("1617 North Wolcott", "1617 North Wolcott Avenue", "Chicago", "2009", "second_chapter", NULL),
     ("Wood House", "1736 North Wood Street", "Chicago", "2013", "second_chapter", NULL),
     ("Chicago Townhouse", "1808 North Paulina Street", "Chicago", "2004", "second_chapter", NULL),
-    ("Fletcher Jones Audi", "1523 West North Avenue", "Chicago", "2010", "second_chapter", NULL);
+    ("Fletcher Jones Audi", "1523 West North Avenue", "Chicago", "2010", "second_chapter", NULL),
+    ("1161 West Division", "1161 West Division Street", "Chicago", "2014", "second_chapter", NULL),
+    ("Briack Weave House", "1922 West Race Avenue", "Chicago", "2009", "second_chapter", NULL),
+    ("Upton's Naturals", "2054 West Grand Avenue", "Chicago", "2015", "second_chapter", NULL);
+    
+    
+-- West side: third_chapter
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("CTA Morgan Street Station", "958 West Lake Street", "Chicago", "2012", "third_chapter", NULL),
+    ("Skybridge", "737 West Washington Boulevard", "Chicago", "2003", "third_chapter", NULL),
+    ("National Hellenic Museum", "333 South Halsted Street", "Chicago", "2008", "third_chapter", NULL),
+    ("Mary Bartelme Park", "115 South Sangamon Street", "Chicago", "2012", "third_chapter", NULL),
+    ("Hubbard Street Dance Chicago", "1147 West Jackson Boulevard", "Chicago", "2006", "third_chapter", NULL);
+    
+    
+-- West side: fourth_chapter
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("UIC Student Recreation Facility", "737 South Halsted Street", "Chicago", "2006", "fourth_chapter", NULL),
+    ("UIC Forum", "725 West Roosevelt Road", "Chicago", "2008", "fourth_chapter", NULL),
+    ("UIC Skyspace", "Halsted and Roosevelt", "Chicago", "2006", "fourth_chapter", NULL),
+    ("Taylor Street Branch LIbrary", "1342 West Taylor Street", "Chicago", "2019", "fourth_chapter", NULL),
+    ("Rush University Medical Center", "1620 West Harrison Street", "Chicago", "2012", "fourth_chapter", NULL),
+    ("Chicago Children's Advocacy Center", "1240 South Damen Avenue", "Chicago", "2015", "fourth_chapter", NULL),
+    ("A Safe Haven Foundation", "2750 West Roosevelt Road", "Chicago", "2006", "fourth_chapter", NULL);
+    
+    
+-- South side: chapter_16
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("McCormick Tribune Campus Center", "3201 South State Street", "Chicago", "2003", "chapter_16", NULL),
+    ("State Street Village Dormitories", "3303 South State Street", "Chicago", "2003", "chapter_16", NULL),
+    ("Ed Kaplan Family Intitute for Innovation and Tech Entrepreneurship", "3137 South Federal Street", "Chicago", "2018", "chapter_16", NULL),
+    ("35th Street Bridge and Station", "142 West 35th Street", "Chicago", "2003", "chapter_16", NULL),
+    ("Park Boulevard", "3622 South State Street", "Chicago", "2013", "chapter_16", NULL),
+    ("Belfort House - Teen Living Programs", "3745 South Indiana Avenue", "Chicago", "2010", "chapter_16", NULL),
+    ("31st Street Harbor", "3155 South Lake Shore Drive", "Chicago", "2012", "chapter_16", NULL);
+    
+
+-- South side: chapter_17
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Hyde Park Arts Center", "5020 South Cornell Avenue", "Chicago", "2007", "chapter_17", NULL),
+    ("City Hyde Park", "5105 South Harper Avenue", "Chicago", "2016", "chapter_17", NULL),
+    ("Akiba-Schechter Jewish Day School", "5235 South Cornell Avenue", "Chicago", "2005", "chapter_17", NULL),
+    ("McCormick Theological Seminary", "5460 South University Avenue", "Chicago", "2003", "chapter_17", NULL),
+    ("Campus North Residential Commons", "5500 South University Avenue", "Chicago", "2016", "chapter_17", NULL),
+    ("Gerald Ratner Athletics Center", "5530 South Ellis Avenue", "Chicago", "2003", "chapter_17", NULL),
+    ("Max Palevsky Residence Commons", "1101 East 56th Street", "Chicago", "2001", "chapter_17", NULL),
+    ("Joe and Rika Mansueto Library", "1100 East 57th Street", "Chicago", "2011", "chapter_17", NULL),
+    ("Gwen and Jules Knapp Center for Biomedical Discovery", "900 East 57th Street", "Chicago", "2009", "chapter_17", NULL),
+    ("Center for Care and Discovery", "5700 South Maryland Avenue", "Chicago", "2013", "chapter_17", NULL),
+    ("UChicago Child Development Center", "5610 South Drexel Avenue", "Chicago", "2013", "chapter_17", NULL),
+    ("West Campus Combined Utility Plant", "5617 South Maryland Avenue", "Chicago", "2010", "chapter_17", NULL),
+    ("Center for the Study of Gender and Sexuality / Race, Politics, and Culture", "5733 South University Avenue", "Chicago", "2013", "chapter_17", NULL),
+    ("Saieh Hall for Economics", "5757 South University Avenue", "Chicago", "2014", "chapter_17", NULL),
+    ("University of Chicago Booth School of Business", "5807 South Woodlawn Avenue", "Chicago", "2004", "chapter_17", NULL),
+    ("Gordon Parks Art Hall", "5815 South Kimbark Avenue", "Chicago", "2015", "chapter_17", NULL),
+    ("Midway Crossings", "Elis, Woodlawn, and Dorchester Avenues", "Chicago", "2013", "chapter_17", NULL),
+    ("Reva and David Logan Center for the Arts", "915 East 60th Street", "Chicago", "2012", "chapter_17", NULL),
+    ("South Campus Chiller Plant", "6035 South Blackstone Avenue", "Chicago", "2010", "chapter_17", NULL),
+    ("Chicago Theological Seminary", "1407 East 60th Street", "Chicago", "2012", "chapter_17", NULL),
+    ("UChicago Child Development Center", "5824 South Stony Island Avenue", "Chicago", "2013", "chapter_17", NULL),
+    ("Earl Shapiro Hall", "5800 South Stony Island Avenue", "Chicago", "2013", "chapter_17", NULL),
+    ("Solstice on the Park", "1616 East 56th Street", "Chicago", "2018", "chapter_17", NULL);
+    
+
+-- South side: chapter_18
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Dorchester Art and Housing Collaborative", "1456 East 70th Street", "Chicago", "2014", "chapter_18", NULL),
+    ("Gary Commer Youth Center", "7200 South Ingleside Avenue", "Chicago", "2006", "chapter_18", NULL),
+    ("Gary Comer College Prep", "7131 South Chicago Avenue", "Chicago", "2010", "chapter_18", NULL),
+    ("South Shore International College Prep High School", "1955 East 75th Street", "Chicago", "2010", "chapter_18", NULL);
+    
+    
+-- South side: chapter_19
+INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
+VALUES 
+    ("Henry C. Palmisano Park", "2700 South Halsted Street", "Chicago", "2009", "chapter_19", NULL),
+    ("Morgan Street Houses", "3209 South Morgan Street", "Chicago", "2007", "chapter_19", NULL),
+    ("Esperanza Health Centers Brighton Park Clinic", "4700 South California Avenue", "Chicago", "2019", "chapter_19", NULL),
+    ("Jovita Idar Elementary School", "5050 South Homan Avenue", "Chicago", "2011", "chapter_19", NULL),
+    ("Victoria Soto High School", "5025 South St. Louis Avenue", "Chicago", "2013", "chapter_19", NULL),
+    ("SOS Children's Villages Lavezzorio Community Center", "7600 South Parnell Avenue", "Chicago", "2008", "chapter_19", NULL);
 
 
 -- Suburbs: North Suburbs
