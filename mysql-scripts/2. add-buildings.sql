@@ -28,14 +28,14 @@ VALUES
 -- Downtown: The Loop (East)
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Chicago Architecture Center", "111 East Wacker Drive", "Chicago", "2018", "the_loop_east", NULL),
-    ("Chicago Riverwalk", "Chicago River", "Chicago", "2016", "the_loop_east", NULL),
-    ("The WIT", "201 North State Street", "Chicago", "2009", "the_loop_east", NULL),
-    ("Block 37", "108 North State Street", "Chicago", "2016", "the_loop_east", NULL),
-    ("CTA Washington/Wabash Station", "Wabash Avenue at Washington Street", "Chicago", "2010", "the_loop_east", NULL),
-    ("The Legacy at Millennium Park", "60 East Monroe Street", "Chicago", "2010", "the_loop_east", NULL),
-    ("11 West Quincy Court Federal Building", "11 West Quincy Street", "Chicago", "2012", "the_loop_east", NULL),
-    ("Rossevelt University Academic, Student Life and Residence Center", "450 South Wabash Avenue", "Chicago", "2012", "the_loop_east", NULL);
+    ("Chicago Architecture Center", "111 East Wacker Drive", "Chicago", "2018", "the_loop_east", "/images/downtown/chicago-architecture-center.jpg"),
+    ("Chicago Riverwalk", "Chicago River", "Chicago", "2016", "the_loop_east", "/images/downtown/chicago-riverwalk.jpg"),
+    ("The WIT", "201 North State Street", "Chicago", "2009", "the_loop_east", "/images/downtown/the-wit.jpg"),
+    ("Block 37", "108 North State Street", "Chicago", "2016", "the_loop_east", "/images/downtown/block-thirty-seven.jpg"),
+    ("CTA Washington/Wabash Station", "Wabash Avenue at Washington Street", "Chicago", "2010", "the_loop_east", "/images/downtown/washington-wabash-station.jpg"),
+    ("The Legacy at Millennium Park", "60 East Monroe Street", "Chicago", "2010", "the_loop_east", "/images/downtown/legacy-at-millennium-park.jpg"),
+    ("11 West Quincy Court Federal Building", "11 West Quincy Street", "Chicago", "2012", "the_loop_east", "/images/downtown/11-west-quincy.jpg"),
+    ("Rossevelt University Academic, Student Life and Residence Center", "450 South Wabash Avenue", "Chicago", "2012", "the_loop_east", "/images/downtown/roosevelt-university-academic.jpg");
     
     
 -- Downtown: The Loop (West)
