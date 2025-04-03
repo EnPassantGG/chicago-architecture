@@ -8,7 +8,7 @@ VALUES
     ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/downtown/mcdonalds-cycle-center.jpg"),
     ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", "/images/downtown/lurie-garden.jpg"),
     ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", "/images/downtown/exelon-pavilions.jpg"),
-    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "downtown", "/images/millenniumPark/modern-wing-at-the-art-institute-of-chicago.jpg"),
+    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park", "/images/downtown/modern-wing-at-the-art-institute-of-chicago.jpg"),
     ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", "/images/downtown/bp-pedestrian-bridge.jpg"),
     ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", "/images/downtown/maggie-daley-park.jpg");
     
@@ -16,13 +16,13 @@ VALUES
 -- Downtown: Lakeshore East
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Blue Cross-Blue Shield Tower", "300 East Randolph Street", "Chicago", "2010", "lakeshore_east", NULL),
-    ("340 on the Park", "340 East Randolph Street", "Chicago", "2007", "lakeshore_east", NULL),
-    ("The Park at Lakeshore East", "405 East Benton Place", "Chicago", "2005", "lakeshore_east", NULL),
-    ("Aqua Tower", "225 North Columbus Drive", "Chicago", "2010", "lakeshore_east", NULL),
-    ("Gems World Academy", "350 East South Water Street", "Chicago", "2020", "lakeshore_east", NULL),
-    ("Coast at Lakeshore East", "345 East Wacker Drive", "Chicago", "2013", "lakeshore_east", NULL),
-    ("St. Regis Chicago", "363 East Wacker Drive", "Chicago", "2020", "lakeshore_east", NULL);
+    ("Blue Cross-Blue Shield Tower", "300 East Randolph Street", "Chicago", "2010", "lakeshore_east", "/images/downtown/blue-cross-blue-shield-tower.jpg"),
+    ("340 on the Park", "340 East Randolph Street", "Chicago", "2007", "lakeshore_east", "/images/downtown/340-on-the-park.jpg"),
+    ("The Park at Lakeshore East", "405 East Benton Place", "Chicago", "2005", "lakeshore_east", "/images/downtown/park-at-lakeshore-east.jpg"),
+    ("Aqua Tower", "225 North Columbus Drive", "Chicago", "2010", "lakeshore_east", "/images/downtown/aqua-tower.jpg"),
+    ("Gems World Academy", "350 East South Water Street", "Chicago", "2020", "lakeshore_east", "/images/downtown/gems-world-academy.jpg"),
+    ("Coast at Lakeshore East", "345 East Wacker Drive", "Chicago", "2013", "lakeshore_east", "/images/downtown/coast-at-lakeshore-east.jpg"),
+    ("St. Regis Chicago", "363 East Wacker Drive", "Chicago", "2020", "lakeshore_east", "/images/downtown/st-regis-chicago.jpg");
     
 
 -- Downtown: The Loop (East)
