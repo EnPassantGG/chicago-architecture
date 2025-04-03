@@ -57,11 +57,11 @@ VALUES
 -- Downtown: South Loop & Chinatown
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Cook County Circuit Courthouse", "555 West Harrison Street", "Chicago", "2005", "south_loop_and_chinatown", NULL),
-    ("William Jones College Preparatory High School", "700 South State Street", "Chicago", "2013", "south_loop_and_chinatown", NULL),
-    ("Spertus Intitute", "610 South Michigan Avenue", "Chicago", "2007", "south_loop_and_chinatown", NULL),
-    ("618 South Michigan Avenue Facade", "618 South Michigan Avenue", "Chicago", "2012", "south_loop_and_chinatown", NULL),
-    ("Student Life Center for East-West University", "829 South Wabash Avenue", "Chicago", "2013", "south_loop_and_chinatown", NULL),
+    ("Cook County Circuit Courthouse", "555 West Harrison Street", "Chicago", "2005", "south_loop_and_chinatown", "/images/downtown/cook-county-courthouse.jpg"),
+    ("William Jones College Preparatory High School", "700 South State Street", "Chicago", "2013", "south_loop_and_chinatown", "/images/downtown/william-jones-prep-school.jpg"),
+    ("Spertus Intitute", "610 South Michigan Avenue", "Chicago", "2007", "south_loop_and_chinatown", "/images/downtown/spertus-institute.jpg"),
+    ("618 South Michigan Avenue Facade", "618 South Michigan Avenue", "Chicago", "2012", "south_loop_and_chinatown", "/images/downtown/618-south-michigan-avenue.jpg"),
+    ("Student Life Center for East-West University", "829 South Wabash Avenue", "Chicago", "2013", "south_loop_and_chinatown", "/images/downtown/student-life-center-wabash.jpg"),
     ("Nema Chicago", "1200 South Indiana Avenue", "Chicago", "2019", "south_loop_and_chinatown", NULL),
     ("Soldier Field and North Burnham Park Redevelopment", "1410 Museum Campus Drive", "Chicago", "2003", "south_loop_and_chinatown", NULL),
     ("Northerly Island", "1521 South Linn White Drive", "Chicago", "2015", "south_loop_and_chinatown", NULL),
