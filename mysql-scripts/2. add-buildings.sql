@@ -4,13 +4,13 @@ VALUES
     ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", "/images/millenniumPark/crown-fountain.jpg"),
     ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", "/images/millenniumPark/cloud-gate.jpeg"),
     ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/jay-pritzker-pavilion.jpg"),
-    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", NULL),
-    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", NULL),
-    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", NULL),
-    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", NULL),
-    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park", NULL),
-    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", NULL),
-    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", NULL);
+    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", "/images/millenniumPark/harris-theater-for-music-and-dance.jpg"),
+    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/mcdonalds-cycle-center.jpg"),
+    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/lurie-garden.jpg"),
+    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/exelon-pavilions.jpg"),
+    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park", "/images/millenniumPark/modern-wing-at-the-art-institute-of-chicago.jpg"),
+    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", "/images/millenniumPark/bp-pedestrian-bridge.jpg"),
+    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", "/images/millenniumPark/maggie-daley-park.jpg");
     
     
 -- Downtown: Lakeshore East
@@ -123,12 +123,12 @@ VALUES
     ("Seigle House", "1856 North Mohawk Street", "Chicago", "2008", "lincoln_park", NULL),
     ("Orchard Willow", "1840 North Orchard Street", "Chicago", "2012", "lincoln_park", NULL),
     ("Private Residence", "838 West Webster Avenue", "Chicago", "2005", "lincoln_park", NULL),
-    ("Nature Boardwalk at Lincoln Park Zoo", "North Stockton Drive", "Chicago", "2010", "near_north_side", NULL),
-    ("Searle Visitor Center", "2001 North Clark Street", "Chicago", "2018", "near_north_side", NULL),
-    ("Pritzker Family Children's Zoo", "2001 North Clark Street", "Chicago", "2005", "near_north_side", NULL),
-    ("Wrightwood 659", "659 West Wrightwood Avenue", "Chicago", "2018", "near_north_side", NULL),
-    ("Concrete Townhouse", "2465 North Burling Street", "Chicago", "2005", "near_north_side", NULL),
-    ("Theatre School", "2350 North Racine Avenue", "Chicago", "2013", "near_north_side", NULL);
+    ("Nature Boardwalk at Lincoln Park Zoo", "North Stockton Drive", "Chicago", "2010", "lincoln_park", NULL),
+    ("Searle Visitor Center", "2001 North Clark Street", "Chicago", "2018", "lincoln_park", NULL),
+    ("Pritzker Family Children's Zoo", "2001 North Clark Street", "Chicago", "2005", "lincoln_park", NULL),
+    ("Wrightwood 659", "659 West Wrightwood Avenue", "Chicago", "2018", "lincoln_park", NULL),
+    ("Concrete Townhouse", "2465 North Burling Street", "Chicago", "2005", "lincoln_park", NULL),
+    ("Theatre School", "2350 North Racine Avenue", "Chicago", "2013", "lincoln_park", NULL);
     
 
 -- North Side: Lakeview and North Center
