@@ -41,17 +41,17 @@ VALUES
 -- Downtown: The Loop (West)
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("One South Dearborn", "1 South Dearborn Street", "Chicago", "2005", "the_loop_west", NULL),
-    ("235 Van Buren", "235 Van Buren Street", "Chicago", "2009", "the_loop_west", NULL),
-    ("Hyatt Center", "71 South Wacker Drive", "Chicago", "2005", "the_loop_west", NULL),
-    ("UBS Tower", "1 North Wacker Drive", "Chicago", "2001", "the_loop_west", NULL),
-    ("111 South Wacker", "111 South Wacker Drive", "Chicago", "2005", "the_loop_west", NULL),
-    ("155 North Wacker", "155 North Wacker Drive", "Chicago", "2009", "the_loop_west", NULL),
-    ("CNA Center", "151 North Franklin Street", "Chicago", "2018", "the_loop_west", NULL),
-    ("OneEleven", "111 West Wacker Drive", "Chicago", "2014", "the_loop_west", NULL),
-    ("Riverbend", "333 North Canal Street", "Chicago", "2002", "the_loop_west", NULL),
-    ("River Point", "444 West Lake Street", "Chicago", "2017", "the_loop_west", NULL),
-    ("150 North Riverside", "150 North Riverside Plaza", "Chicago", "2018", "the_loop_west", NULL);
+    ("One South Dearborn", "1 South Dearborn Street", "Chicago", "2005", "the_loop_west", "/images/downtown/one-south-dearborn.jpg"),
+    ("235 Van Buren", "235 Van Buren Street", "Chicago", "2009", "the_loop_west", "/images/downtown/235-van-buren.jpg"),
+    ("Hyatt Center", "71 South Wacker Drive", "Chicago", "2005", "the_loop_west", "/images/downtown/hyatt-center.jpg"),
+    ("UBS Tower", "1 North Wacker Drive", "Chicago", "2001", "the_loop_west", "/images/downtown/ubs-tower.jpg"),
+    ("111 South Wacker", "111 South Wacker Drive", "Chicago", "2005", "the_loop_west", "/images/downtown/111-south-wacker.jpg"),
+    ("155 North Wacker", "155 North Wacker Drive", "Chicago", "2009", "the_loop_west", "/images/downtown/155-north-wacker.jpg"),
+    ("CNA Center", "151 North Franklin Street", "Chicago", "2018", "the_loop_west", "/images/downtown/cna-center.jpg"),
+    ("OneEleven", "111 West Wacker Drive", "Chicago", "2014", "the_loop_west", "/images/downtown/111-west-wacker-drive.jpg"),
+    ("Riverbend", "333 North Canal Street", "Chicago", "2002", "the_loop_west", "/images/downtown/riverbend.jpg"),
+    ("River Point", "444 West Lake Street", "Chicago", "2017", "the_loop_west", "/images/downtown/river-point.jpg"),
+    ("150 North Riverside", "150 North Riverside Plaza", "Chicago", "2018", "the_loop_west", "/images/downtown/150-north-riverside.jpg");
     
     
 -- Downtown: South Loop & Chinatown
