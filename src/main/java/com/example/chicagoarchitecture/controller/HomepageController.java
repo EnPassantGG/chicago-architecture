@@ -30,17 +30,12 @@ public class HomepageController {
         LinkedHashMap<String, String> chicagoDistricts = new LinkedHashMap<>();
         chicagoDistricts.put("Downtown", "downtown");
         chicagoDistricts.put("North Side", "north_side");
-        chicagoDistricts.put("West Side (coming soon)", "west_side");
-        chicagoDistricts.put("South Side (coming soon)", "south_side");
+        chicagoDistricts.put("West Side", "west_side");
+        chicagoDistricts.put("South Side", "south_side");
         chicagoDistricts.put("Suburbs", "suburbs");
         model.addAttribute("chicagoDistricts", chicagoDistricts);
 
         return "homepage";
-    }
-
-    @GetMapping("/west_side")
-    public String westSideDistrict() {
-        return "chicagoDistricts/west_side";
     }
 
     @PostMapping("/search")
