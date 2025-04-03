@@ -43,12 +43,6 @@ public class HomepageController {
         return "chicagoDistricts/west_side";
     }
 
-    @GetMapping("/south_side")
-    public String southSideDistrict() {
-        return "chicagoDistricts/south_side";
-    }
-
-
     @PostMapping("/search")
     public String searchResult(@RequestParam("city") String city, Model model) {
         List<Building> buildings = buildingDAO.getBuildingsByCity(city);
