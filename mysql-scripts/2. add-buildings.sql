@@ -1,16 +1,16 @@
 -- Downtown: Millennium Park
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", "/images/millenniumPark/crown-fountain.jpg"),
-    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", "/images/millenniumPark/cloud-gate.jpeg"),
-    ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/jay-pritzker-pavilion.jpg"),
-    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", "/images/millenniumPark/harris-theater-for-music-and-dance.jpg"),
-    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/mcdonalds-cycle-center.jpg"),
-    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/lurie-garden.jpg"),
-    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/exelon-pavilions.jpg"),
-    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park", "/images/millenniumPark/modern-wing-at-the-art-institute-of-chicago.jpg"),
-    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", "/images/millenniumPark/bp-pedestrian-bridge.jpg"),
-    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", "/images/millenniumPark/maggie-daley-park.jpg");
+    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", "/images/downtown/crown-fountain.jpg"),
+    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", "/images/downtown/cloud-gate.jpeg"),
+    ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/downtown/jay-pritzker-pavilion.jpg"),
+    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", "/images/downtown/harris-theater-for-music-and-dance.jpg"),
+    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/downtown/mcdonalds-cycle-center.jpg"),
+    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", "/images/downtown/lurie-garden.jpg"),
+    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", "/images/downtown/exelon-pavilions.jpg"),
+    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "downtown", "/images/millenniumPark/modern-wing-at-the-art-institute-of-chicago.jpg"),
+    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", "/images/downtown/bp-pedestrian-bridge.jpg"),
+    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", "/images/downtown/maggie-daley-park.jpg");
     
     
 -- Downtown: Lakeshore East
