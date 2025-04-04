@@ -1,158 +1,159 @@
 USE `architecture_directory`;
+
 -- Downtown: Millennium Park
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", "/images/millenniumPark/crown-fountain.jpg"),
-    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", "/images/millenniumPark/cloud-gate.jpeg"),
-    ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/millenniumPark/jay-pritzker-pavilion.jpg"),
-    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", NULL),
-    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", NULL),
-    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", NULL),
-    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", NULL),
-    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park", NULL),
-    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", NULL),
-    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", NULL);
+    ("Crown Fountain", "Michigan Avenue", "Chicago", "2004", "millennium_park", "/images/downtown/crown-fountain.jpg"),
+    ("Cloud Gate", "Michigan Avenue", "Chicago", "2006", "millennium_park", "/images/downtown/cloud-gate.jpeg"),
+    ("Jay Pritzker Pavilion", "201 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/downtown/jay-pritzker-pavilion.jpg"),
+    ("Harris Theater for Music and Dance", "205 East Randolph Street", "Chicago", "2003", "millennium_park", "/images/downtown/harris-theater-for-music-and-dance.jpg"),
+    ("McDonald's Cycle Center", "239 East Randolph Street", "Chicago", "2004", "millennium_park", "/images/downtown/mcdonalds-cycle-center.jpg"),
+    ("Lurie Garden", "Monroe Street", "Chicago", "2004", "millennium_park", "/images/downtown/lurie-garden.jpg"),
+    ("Excelon Pavilions", "Randolph Street and Monroe Street", "Chicago", "2004", "millennium_park", "/images/downtown/exelon-pavilions.jpg"),
+    ("Modern Wing at the Art Intitute of Chicago", "Monroe Street", "Chicago", "2003", "millennium_park", "/images/downtown/modern-wing-at-the-art-institute-of-chicago.jpg"),
+    ("BP Pedestrian Bridge", "Columbus Drive", "Chicago", "2004", "millennium_park", "/images/downtown/bp-pedestrian-bridge.jpg"),
+    ("Maggie Daley Park", "337 East Randolph Street", "Chicago", "2006", "millennium_park", "/images/downtown/maggie-daley-park.jpg");
     
     
 -- Downtown: Lakeshore East
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Blue Cross-Blue Shield Tower", "300 East Randolph Street", "Chicago", "2010", "lakeshore_east", NULL),
-    ("340 on the Park", "340 East Randolph Street", "Chicago", "2007", "lakeshore_east", NULL),
-    ("The Park at Lakeshore East", "405 East Benton Place", "Chicago", "2005", "lakeshore_east", NULL),
-    ("Aqua Tower", "225 North Columbus Drive", "Chicago", "2010", "lakeshore_east", NULL),
-    ("Gems World Academy", "350 East South Water Street", "Chicago", "2020", "lakeshore_east", NULL),
-    ("Coast at Lakeshore East", "345 East Wacker Drive", "Chicago", "2013", "lakeshore_east", NULL),
-    ("St. Regis Chicago", "363 East Wacker Drive", "Chicago", "2020", "lakeshore_east", NULL);
+    ("Blue Cross-Blue Shield Tower", "300 East Randolph Street", "Chicago", "2010", "lakeshore_east", "/images/downtown/blue-cross-blue-shield-tower.jpg"),
+    ("340 on the Park", "340 East Randolph Street", "Chicago", "2007", "lakeshore_east", "/images/downtown/340-on-the-park.jpg"),
+    ("The Park at Lakeshore East", "405 East Benton Place", "Chicago", "2005", "lakeshore_east", "/images/downtown/park-at-lakeshore-east.jpg"),
+    ("Aqua Tower", "225 North Columbus Drive", "Chicago", "2010", "lakeshore_east", "/images/downtown/aqua-tower.jpg"),
+    ("Gems World Academy", "350 East South Water Street", "Chicago", "2020", "lakeshore_east", "/images/downtown/gems-world-academy.jpg"),
+    ("Coast at Lakeshore East", "345 East Wacker Drive", "Chicago", "2013", "lakeshore_east", "/images/downtown/coast-at-lakeshore-east.jpg"),
+    ("St. Regis Chicago", "363 East Wacker Drive", "Chicago", "2020", "lakeshore_east", "/images/downtown/st-regis-chicago.jpg");
     
 
 -- Downtown: The Loop (East)
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Chicago Architecture Center", "111 East Wacker Drive", "Chicago", "2018", "the_loop_east", NULL),
-    ("Chicago Riverwalk", "Chicago River", "Chicago", "2016", "the_loop_east", NULL),
-    ("The WIT", "201 North State Street", "Chicago", "2009", "the_loop_east", NULL),
-    ("Block 37", "108 North State Street", "Chicago", "2016", "the_loop_east", NULL),
-    ("CTA Washington/Wabash Station", "Wabash Avenue at Washington Street", "Chicago", "2010", "the_loop_east", NULL),
-    ("The Legacy at Millennium Park", "60 East Monroe Street", "Chicago", "2010", "the_loop_east", NULL),
-    ("11 West Quincy Court Federal Building", "11 West Quincy Street", "Chicago", "2012", "the_loop_east", NULL),
-    ("Rossevelt University Academic, Student Life and Residence Center", "450 South Wabash Avenue", "Chicago", "2012", "the_loop_east", NULL);
+    ("Chicago Architecture Center", "111 East Wacker Drive", "Chicago", "2018", "the_loop_east", "/images/downtown/chicago-architecture-center.jpg"),
+    ("Chicago Riverwalk", "Chicago River", "Chicago", "2016", "the_loop_east", "/images/downtown/chicago-riverwalk.jpg"),
+    ("The WIT", "201 North State Street", "Chicago", "2009", "the_loop_east", "/images/downtown/the-wit.jpg"),
+    ("Block 37", "108 North State Street", "Chicago", "2016", "the_loop_east", "/images/downtown/block-thirty-seven.jpg"),
+    ("CTA Washington/Wabash Station", "Wabash Avenue at Washington Street", "Chicago", "2010", "the_loop_east", "/images/downtown/washington-wabash-station.jpg"),
+    ("The Legacy at Millennium Park", "60 East Monroe Street", "Chicago", "2010", "the_loop_east", "/images/downtown/legacy-at-millennium-park.jpg"),
+    ("11 West Quincy Court Federal Building", "11 West Quincy Street", "Chicago", "2012", "the_loop_east", "/images/downtown/11-west-quincy.jpg"),
+    ("Rossevelt University Academic, Student Life and Residence Center", "450 South Wabash Avenue", "Chicago", "2012", "the_loop_east", "/images/downtown/roosevelt-university-academic.jpg");
     
     
 -- Downtown: The Loop (West)
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("One South Dearborn", "1 South Dearborn Street", "Chicago", "2005", "the_loop_west", NULL),
-    ("235 Van Buren", "235 Van Buren Street", "Chicago", "2009", "the_loop_west", NULL),
-    ("Hyatt Center", "71 South Wacker Drive", "Chicago", "2005", "the_loop_west", NULL),
-    ("UBS Tower", "1 North Wacker Drive", "Chicago", "2001", "the_loop_west", NULL),
-    ("111 South Wacker", "111 South Wacker Drive", "Chicago", "2005", "the_loop_west", NULL),
-    ("155 North Wacker", "155 North Wacker Drive", "Chicago", "2009", "the_loop_west", NULL),
-    ("CNA Center", "151 North Franklin Street", "Chicago", "2018", "the_loop_west", NULL),
-    ("OneEleven", "111 West Wacker Drive", "Chicago", "2014", "the_loop_west", NULL),
-    ("Riverbend", "333 North Canal Street", "Chicago", "2002", "the_loop_west", NULL),
-    ("River Point", "444 West Lake Street", "Chicago", "2017", "the_loop_west", NULL),
-    ("150 North Riverside", "150 North Riverside Plaza", "Chicago", "2018", "the_loop_west", NULL);
+    ("One South Dearborn", "1 South Dearborn Street", "Chicago", "2005", "the_loop_west", "/images/downtown/one-south-dearborn.jpg"),
+    ("235 Van Buren", "235 Van Buren Street", "Chicago", "2009", "the_loop_west", "/images/downtown/235-van-buren.jpg"),
+    ("Hyatt Center", "71 South Wacker Drive", "Chicago", "2005", "the_loop_west", "/images/downtown/hyatt-center.jpg"),
+    ("UBS Tower", "1 North Wacker Drive", "Chicago", "2001", "the_loop_west", "/images/downtown/ubs-tower.jpg"),
+    ("111 South Wacker", "111 South Wacker Drive", "Chicago", "2005", "the_loop_west", "/images/downtown/111-south-wacker.jpg"),
+    ("155 North Wacker", "155 North Wacker Drive", "Chicago", "2009", "the_loop_west", "/images/downtown/155-north-wacker.jpg"),
+    ("CNA Center", "151 North Franklin Street", "Chicago", "2018", "the_loop_west", "/images/downtown/cna-center.jpg"),
+    ("OneEleven", "111 West Wacker Drive", "Chicago", "2014", "the_loop_west", "/images/downtown/111-west-wacker-drive.jpg"),
+    ("Riverbend", "333 North Canal Street", "Chicago", "2002", "the_loop_west", "/images/downtown/riverbend.jpg"),
+    ("River Point", "444 West Lake Street", "Chicago", "2017", "the_loop_west", "/images/downtown/river-point.jpg"),
+    ("150 North Riverside", "150 North Riverside Plaza", "Chicago", "2018", "the_loop_west", "/images/downtown/150-north-riverside.jpg");
     
     
 -- Downtown: South Loop & Chinatown
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Cook County Circuit Courthouse", "555 West Harrison Street", "Chicago", "2005", "south_loop_and_chinatown", NULL),
-    ("William Jones College Preparatory High School", "700 South State Street", "Chicago", "2013", "south_loop_and_chinatown", NULL),
-    ("Spertus Intitute", "610 South Michigan Avenue", "Chicago", "2007", "south_loop_and_chinatown", NULL),
-    ("618 South Michigan Avenue Facade", "618 South Michigan Avenue", "Chicago", "2012", "south_loop_and_chinatown", NULL),
-    ("Student Life Center for East-West University", "829 South Wabash Avenue", "Chicago", "2013", "south_loop_and_chinatown", NULL),
-    ("Nema Chicago", "1200 South Indiana Avenue", "Chicago", "2019", "south_loop_and_chinatown", NULL),
-    ("Soldier Field and North Burnham Park Redevelopment", "1410 Museum Campus Drive", "Chicago", "2003", "south_loop_and_chinatown", NULL),
-    ("Northerly Island", "1521 South Linn White Drive", "Chicago", "2015", "south_loop_and_chinatown", NULL),
-    ("Columbia College Chicago Media Production Center", "1600 South State Street", "Chicago", "2010", "south_loop_and_chinatown", NULL),
-    ("Perspective Charter School Rodney D. Joslin Campus", "1930 South Archer Avenue", "Chicago", "2004", "south_loop_and_chinatown", NULL),
-    ("CTA Cermak-McCormick Place Station", "12 East Cermak Road", "Chicago", "2015", "south_loop_and_chinatown", NULL),
-    ("McCormick Place West", "Cermak Road", "Chicago", "2007", "south_loop_and_chinatown", NULL),
-    ("Ping Tom Memorial Park Boathouse & Fieldhouse", "300 West 19th Street", "Chicago", "2013", "south_loop_and_chinatown", NULL),
-    ("Chinese American Service League Kam L. Liu Building", "2141 South Tan Court", "Chicago", "2004", "south_loop_and_chinatown", NULL),
-    ("Chinatown Branch Library", "2100 South Wentworth Avenue", "Chicago", "2015", "south_loop_and_chinatown", NULL);
+    ("Cook County Circuit Courthouse", "555 West Harrison Street", "Chicago", "2005", "south_loop_and_chinatown", "/images/downtown/cook-county-courthouse.jpg"),
+    ("William Jones College Preparatory High School", "700 South State Street", "Chicago", "2013", "south_loop_and_chinatown", "/images/downtown/william-jones-prep-school.jpg"),
+    ("Spertus Intitute", "610 South Michigan Avenue", "Chicago", "2007", "south_loop_and_chinatown", "/images/downtown/spertus-institute.jpg"),
+    ("618 South Michigan Avenue Facade", "618 South Michigan Avenue", "Chicago", "2012", "south_loop_and_chinatown", "/images/downtown/618-south-michigan-avenue.jpg"),
+    ("Student Life Center for East-West University", "829 South Wabash Avenue", "Chicago", "2013", "south_loop_and_chinatown", "/images/downtown/student-life-center-wabash.jpg"),
+    ("Nema Chicago", "1200 South Indiana Avenue", "Chicago", "2019", "south_loop_and_chinatown", "/images/downtown/nema-chicago.jpg"),
+    ("Soldier Field and North Burnham Park Redevelopment", "1410 Museum Campus Drive", "Chicago", "2003", "south_loop_and_chinatown", "/images/downtown/soldier-field.jpg"),
+    ("Northerly Island", "1521 South Linn White Drive", "Chicago", "2015", "south_loop_and_chinatown", "/images/downtown/northerly-island.jpg"),
+    ("Columbia College Chicago Media Production Center", "1600 South State Street", "Chicago", "2010", "south_loop_and_chinatown", "/images/downtown/columbia-college-media-center.jpg"),
+    ("Perspective Charter School Rodney D. Joslin Campus", "1930 South Archer Avenue", "Chicago", "2004", "south_loop_and_chinatown", "/images/downtown/perspective-charter-school.jpg"),
+    ("CTA Cermak-McCormick Place Station", "12 East Cermak Road", "Chicago", "2015", "south_loop_and_chinatown", "/images/downtown/cta-cermak-mccormic-place-station.jpg"),
+    ("McCormick Place West", "Cermak Road", "Chicago", "2007", "south_loop_and_chinatown", "/images/downtown/mccormic-place-west.jpg"),
+    ("Ping Tom Memorial Park Boathouse & Fieldhouse", "300 West 19th Street", "Chicago", "2013", "south_loop_and_chinatown", "/images/downtown/ping-tom-boathouse-and-fieldhouse.jpg"),
+    ("Chinese American Service League Kam L. Liu Building", "2141 South Tan Court", "Chicago", "2004", "south_loop_and_chinatown", "/images/downtown/chinese-american-service-league.jpg"),
+    ("Chinatown Branch Library", "2100 South Wentworth Avenue", "Chicago", "2015", "south_loop_and_chinatown", "/images/downtown/chinatown-branch-library.jpg");
     
 
 -- North Side: River North
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Trump International Hotel & Tower", "401 North Wabash Avenue", "Chicago", "2009", "river_north", NULL),
-    ("Museum of Broadcast Communications", "360 North State Street", "Chicago", "2012", "river_north", NULL),
-    ("300 North LaSalle", "300 North LaSalle Street", "Chicago", "2009", "river_north", NULL),
-    ("Wolf Point", "343 West Wold Point Plaza", "Chicago", "2023", "river_north", NULL),
-    ("Contemporaine", "516 North WElls Street", "Chicago", "2004", "river_north", NULL),
-    ("McDonald's Chicago Flagship", "600 N. Clark Street", "Chicago", "2018", "river_north", NULL),
-    ("Erie on the Park", "510 West Erie Street", "Chicago", "2002", "river_north", NULL),
-    ("156 West Superior", "156 West Superior Street", "Chicago", "2006", "river_north", NULL),
-    ("The Godfrey Hotel", "127 West Huron Street", "Chicago", "2014", "river_north", NULL),
-    ("Poetry Foundation", "61 West Superior Street", "Chicago", "2011", "river_north", NULL);
+    ("Trump International Hotel & Tower", "401 North Wabash Avenue", "Chicago", "2009", "river_north", "/images/north-side/trump-international-tower.jpg"),
+    ("Museum of Broadcast Communications", "360 North State Street", "Chicago", "2012", "river_north", "/images/north-side/museum-of-broadcast-communications.jpg"),
+    ("300 North LaSalle", "300 North LaSalle Street", "Chicago", "2009", "river_north", "/images/north-side/300-north-lasalle.jpg"),
+    ("Wolf Point", "343 West Wold Point Plaza", "Chicago", "2023", "river_north", "/images/north-side/wolf-point-west.jpg"),
+    ("Contemporaine", "516 North WElls Street", "Chicago", "2004", "river_north", "/images/north-side/contemporaine.jpg"),
+    ("McDonald's Chicago Flagship", "600 N. Clark Street", "Chicago", "2018", "river_north", "/images/north-side/mcdonalds-chicago-flagship.jpg"),
+    ("Erie on the Park", "510 West Erie Street", "Chicago", "2002", "river_north", "/images/north-side/erie-on-the-park.jpeg"),
+    ("156 West Superior", "156 West Superior Street", "Chicago", "2006", "river_north", "/images/north-side/156-west-superior.jpg"),
+    ("The Godfrey Hotel", "127 West Huron Street", "Chicago", "2014", "river_north", "/images/north-side/godfrey-hotel.jpg"),
+    ("Poetry Foundation", "61 West Superior Street", "Chicago", "2011", "river_north", "/images/north-side/poetry-foundation.jpg");
 
 
 -- North Side: Streeterville
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Apple Michigan Avenue", "401 North Michigan Avenue", "Chicago", "2017", "streeterville", NULL),
-    ("Optima Chicago Center", "200 East Illinois Street", "Chicago", "2013", "streeterville", NULL),
-    ("600 North Fairbanks", "600 North Fairbanks Court", "Chicago", "2007", "streeterville", NULL),
-    ("One Bennett Park", "451 East Grand Avenue", "Chicago", "2019", "streeterville", NULL),
-    ("Navy Pier Pierscape", "600 East Grand Avenue", "Chicago", "2016", "streeterville", NULL),
-    ("The Yard at Chicago Shakespeare", "800 East Grand Avenue", "Chicago", "2017", "streeterville", NULL),
-    ("Simpson Querrey Biomedical Research Center", "303 East Superior Street", "Chicago", "2019", "streeterville", NULL),
-    ("Lurie Children's Hospital", "225 East Chicago Avenue", "Chicago", "2012", "streeterville", NULL),
-    ("Park Tower", "800 North Michigan Avenue", "Chicago", "2000", "streeterville", NULL),
-    ("Sofitel Hotel", "20 East Chestnut Street", "Chicago", "2002", "streeterville", NULL),
-    ("Fourth Presbyterian Church of Chicago", "126 East Chestnut Street", "Chicago", "2013", "streeterville", NULL);
+    ("Apple Michigan Avenue", "401 North Michigan Avenue", "Chicago", "2017", "streeterville", "/images/north-side/apple-michigan-avenue.jpg"),
+    ("Optima Chicago Center", "200 East Illinois Street", "Chicago", "2013", "streeterville", "/images/north-side/optima-center.jpg"),
+    ("600 North Fairbanks", "600 North Fairbanks Court", "Chicago", "2007", "streeterville", "/images/north-side/600-north-fairbanks.jpg"),
+    ("One Bennett Park", "451 East Grand Avenue", "Chicago", "2019", "streeterville", "/images/north-side/one-bennett-park.jpg"),
+    ("Navy Pier Pierscape", "600 East Grand Avenue", "Chicago", "2016", "streeterville", "/images/north-side/navy-pier-pierscape.jpg"),
+    ("The Yard at Chicago Shakespeare", "800 East Grand Avenue", "Chicago", "2017", "streeterville", "/images/north-side/chicago-shakespeare-theater.jpg"),
+    ("Simpson Querrey Biomedical Research Center", "303 East Superior Street", "Chicago", "2019", "streeterville", "/images/north-side/simpson-querrey-biomedical-research-center.jpg"),
+    ("Lurie Children's Hospital", "225 East Chicago Avenue", "Chicago", "2012", "streeterville", "/images/north-side/lurie-childrens-hospital.jpg"),
+    ("Park Tower", "800 North Michigan Avenue", "Chicago", "2000", "streeterville", "/images/north-side/park-tower.jpg"),
+    ("Sofitel Hotel", "20 East Chestnut Street", "Chicago", "2002", "streeterville", "/images/north-side/sofitel-hotel-chicago.jpg"),
+    ("Fourth Presbyterian Church of Chicago", "126 East Chestnut Street", "Chicago", "2013", "streeterville", "/images/north-side/fourth-presbyterian-church.jpg");
     
 
 -- North Side: Near North Side
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Jesse White Community Center & Field House", "410 West Chicago Avenue", "Chicago", "2014", "near_north_side", NULL),
-    ("Viceroy Chicago", "1118 North State Street", "Chicago", "2017", "near_north_side", NULL),
-    ("Walter Payton College Preparatory High School", "1034 North Wells Street", "Chicago", "2016", "near_north_side", NULL),
-    ("Schiff Residences", "1244 North Clybourn Street", "Chicago", "2007", "near_north_side", NULL),
-    ("Tower House", "1306 North Cleveland Avenue", "Chicago", "2001", "near_north_side", NULL),
-    ("Blackhawk on Halsted", "814 West Eastman Street", "Chicago", "2007", "near_north_side", NULL);
+    ("Jesse White Community Center & Field House", "410 West Chicago Avenue", "Chicago", "2014", "near_north_side", "/images/north-side/jesse-white-community-center.jpg"),
+    ("Viceroy Chicago", "1118 North State Street", "Chicago", "2017", "near_north_side", "/images/north-side/viceroy-chicago.jpg"),
+    ("Walter Payton College Preparatory High School", "1034 North Wells Street", "Chicago", "2016", "near_north_side", "/images/north-side/walter-payton-college-prep.jpg"),
+    ("Schiff Residences", "1244 North Clybourn Street", "Chicago", "2007", "near_north_side", "/images/north-side/schiff-residences.jpg"),
+    ("Tower House", "1306 North Cleveland Avenue", "Chicago", "2001", "near_north_side", "/images/north-side/placeholder-image.jpg"),
+    ("Blackhawk on Halsted", "814 West Eastman Street", "Chicago", "2007", "near_north_side", "/images/north-side/blackhawk-halsted.jpeg");
     
 
 -- North Side: Lincoln Park
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Mohawk House", "1712 North Mohawk Street", "Chicago", "2015", "lincoln_park", NULL),
-    ("Seigle House", "1856 North Mohawk Street", "Chicago", "2008", "lincoln_park", NULL),
-    ("Orchard Willow", "1840 North Orchard Street", "Chicago", "2012", "lincoln_park", NULL),
-    ("Private Residence", "838 West Webster Avenue", "Chicago", "2005", "lincoln_park", NULL),
-    ("Nature Boardwalk at Lincoln Park Zoo", "North Stockton Drive", "Chicago", "2010", "near_north_side", NULL),
-    ("Searle Visitor Center", "2001 North Clark Street", "Chicago", "2018", "near_north_side", NULL),
-    ("Pritzker Family Children's Zoo", "2001 North Clark Street", "Chicago", "2005", "near_north_side", NULL),
-    ("Wrightwood 659", "659 West Wrightwood Avenue", "Chicago", "2018", "near_north_side", NULL),
-    ("Concrete Townhouse", "2465 North Burling Street", "Chicago", "2005", "near_north_side", NULL),
-    ("Theatre School", "2350 North Racine Avenue", "Chicago", "2013", "near_north_side", NULL);
+    ("Mohawk House", "1712 North Mohawk Street", "Chicago", "2015", "lincoln_park", "/images/north-side/mohawk-house.jpg"),
+    ("Seigle House", "1856 North Mohawk Street", "Chicago", "2008", "lincoln_park", "/images/north-side/1856-north-mohawk-street.jpg"),
+    ("Orchard Willow", "1840 North Orchard Street", "Chicago", "2012", "lincoln_park", "/images/north-side/orchard-willow.jpg"),
+    ("Private Residence", "838 West Webster Avenue", "Chicago", "2005", "lincoln_park", "/images/north-side/838-west-webster-avenue.jpg"),
+    ("Nature Boardwalk at Lincoln Park Zoo", "North Stockton Drive", "Chicago", "2010", "lincoln_park", "/images/north-side/nature-boardwalk-lincoln-park-zoo.jpg"),
+    ("Searle Visitor Center", "2001 North Clark Street", "Chicago", "2018", "lincoln_park", "/images/north-side/searle-visitor-center.jpg"),
+    ("Pritzker Family Children's Zoo", "2001 North Clark Street", "Chicago", "2005", "lincoln_park", "/images/north-side/pritzker-childrens-zoo.jpg"),
+    ("Wrightwood 659", "659 West Wrightwood Avenue", "Chicago", "2018", "lincoln_park", "/images/north-side/659-wrightwood.jpg"),
+    ("Concrete Townhouse", "2465 North Burling Street", "Chicago", "2005", "lincoln_park", "/images/north-side/concrete-townhouse.jpg"),
+    ("Theatre School", "2350 North Racine Avenue", "Chicago", "2013", "lincoln_park", "/images/north-side/theater-school.jpg");
     
 
 -- North Side: Lakeview and North Center
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Lake Shore Drive Residence", "310 West Wellington Street", "Chicago", "2011", "lakeview_and_north_center", NULL),
-    ("Advocate Illinois Masonic Medical Center", "West Barry Avenue", "Chicago", "2015", "lakeview_and_north_center", NULL),
-    ("Center on Halsted", "3656 North Halsted Street", "Chicago", "2007", "lakeview_and_north_center", NULL),
-    ("Town Hall Apartments", "3600 North Halsted Street", "Chicago", "2014", "lakeview_and_north_center", NULL),
-    ("Lathrop Homes", "2000 West Diversey Parkway", "Chicago", "2019", "lakeview_and_north_center", NULL),
-    ("Claremont House", "3909 North Claremont Street", "Chicago", "2007", "lakeview_and_north_center", NULL),
-    ("WHM Boathouse at Clark Park", "3400 North Rockwell Street", "Chicago", "2013", "lakeview_and_north_center", NULL);
+    ("Lake Shore Drive Residence", "310 West Wellington Street", "Chicago", "2011", "lakeview_and_north_center", "/images/north-side/placeholder-image.jpg"),
+    ("Advocate Illinois Masonic Medical Center", "West Barry Avenue", "Chicago", "2015", "lakeview_and_north_center", "/images/north-side/masonic-medical-center.jpg"),
+    ("Center on Halsted", "3656 North Halsted Street", "Chicago", "2007", "lakeview_and_north_center", "/images/north-side/center-on-halsted.jpg"),
+    ("Town Hall Apartments", "3600 North Halsted Street", "Chicago", "2014", "lakeview_and_north_center", "/images/north-side/town-hall-apartments.jpg"),
+    ("Lathrop Homes", "2000 West Diversey Parkway", "Chicago", "2019", "lakeview_and_north_center", "/images/north-side/placeholder-image.jpg"),
+    ("Claremont House", "3909 North Claremont Street", "Chicago", "2007", "lakeview_and_north_center", "/images/north-side/claremont-house.jpg"),
+    ("WHM Boathouse at Clark Park", "3400 North Rockwell Street", "Chicago", "2013", "lakeview_and_north_center", "/images/north-side/wms-boathouse-at-clark-park.jpg");
     
     
 -- North Side: Other neighborhoods
 INSERT INTO building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Argyle", "2575 West Argyle Street", "Chicago", "2011", "other_neighborhoods", NULL),
-    ("Yannell Net-Zero Energy Residence", "4895 North Ravenswood Avenue", "Chicago", "2009", "other_neighborhoods", NULL),
-    ("Doblin Residence", "5017 North Ravenswood Avenue", "Chicago", "2014", "other_neighborhoods", NULL),
-    ("Rogers Park Montessori School", "1800 West Balmoral Avenue", "Chicago", "2016", "other_neighborhoods", NULL),
-    ("Richard J. Klarchek Information Commons", "6501 North Kenmore Avenue", "Chicago", "2008", "other_neighborhoods", NULL),
-    ("Institute of Environmental Sustainability", "6349 North Kenmore Avenue", "Chicago", "2013", "other_neighborhoods", NULL);
+    ("Argyle", "2575 West Argyle Street", "Chicago", "2011", "other_neighborhoods", "/images/north-side/placeholder-image.jpg"),
+    ("Yannell Net-Zero Energy Residence", "4895 North Ravenswood Avenue", "Chicago", "2009", "other_neighborhoods", "/images/north-side/yannell-house.jpg"),
+    ("Doblin Residence", "5017 North Ravenswood Avenue", "Chicago", "2014", "other_neighborhoods", "/images/north-side/doblin-house.jpg"),
+    ("Rogers Park Montessori School", "1800 West Balmoral Avenue", "Chicago", "2016", "other_neighborhoods", "/images/north-side/rogers-park-montessori-school.jpg"),
+    ("Richard J. Klarchek Information Commons", "6501 North Kenmore Avenue", "Chicago", "2008", "other_neighborhoods", "/images/north-side/richard-j-klarcheck-information-commons.jpg"),
+    ("Institute of Environmental Sustainability", "6349 North Kenmore Avenue", "Chicago", "2013", "other_neighborhoods", "/images/north-side/institue-of-environmental-sustainability.jpg");
     
 
 -- West side: first_chapter
