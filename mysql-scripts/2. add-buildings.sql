@@ -108,50 +108,50 @@ VALUES
 -- North Side: Near North Side
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Jesse White Community Center & Field House", "410 West Chicago Avenue", "Chicago", "2014", "near_north_side", NULL),
-    ("Viceroy Chicago", "1118 North State Street", "Chicago", "2017", "near_north_side", NULL),
-    ("Walter Payton College Preparatory High School", "1034 North Wells Street", "Chicago", "2016", "near_north_side", NULL),
-    ("Schiff Residences", "1244 North Clybourn Street", "Chicago", "2007", "near_north_side", NULL),
-    ("Tower House", "1306 North Cleveland Avenue", "Chicago", "2001", "near_north_side", NULL),
-    ("Blackhawk on Halsted", "814 West Eastman Street", "Chicago", "2007", "near_north_side", NULL);
+    ("Jesse White Community Center & Field House", "410 West Chicago Avenue", "Chicago", "2014", "near_north_side", "/images/north-side/jesse-white-community-center.jpg"),
+    ("Viceroy Chicago", "1118 North State Street", "Chicago", "2017", "near_north_side", "/images/north-side/viceroy-chicago.jpg"),
+    ("Walter Payton College Preparatory High School", "1034 North Wells Street", "Chicago", "2016", "near_north_side", "/images/north-side/walter-payton-college-prep.jpg"),
+    ("Schiff Residences", "1244 North Clybourn Street", "Chicago", "2007", "near_north_side", "/images/north-side/schiff-residences.jpg"),
+    ("Tower House", "1306 North Cleveland Avenue", "Chicago", "2001", "near_north_side", "/images/north-side/placeholder-image.jpg"),
+    ("Blackhawk on Halsted", "814 West Eastman Street", "Chicago", "2007", "near_north_side", "/images/north-side/blackhawk-halsted.jpeg");
     
 
 -- North Side: Lincoln Park
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Mohawk House", "1712 North Mohawk Street", "Chicago", "2015", "lincoln_park", NULL),
-    ("Seigle House", "1856 North Mohawk Street", "Chicago", "2008", "lincoln_park", NULL),
-    ("Orchard Willow", "1840 North Orchard Street", "Chicago", "2012", "lincoln_park", NULL),
-    ("Private Residence", "838 West Webster Avenue", "Chicago", "2005", "lincoln_park", NULL),
-    ("Nature Boardwalk at Lincoln Park Zoo", "North Stockton Drive", "Chicago", "2010", "lincoln_park", NULL),
-    ("Searle Visitor Center", "2001 North Clark Street", "Chicago", "2018", "lincoln_park", NULL),
-    ("Pritzker Family Children's Zoo", "2001 North Clark Street", "Chicago", "2005", "lincoln_park", NULL),
-    ("Wrightwood 659", "659 West Wrightwood Avenue", "Chicago", "2018", "lincoln_park", NULL),
-    ("Concrete Townhouse", "2465 North Burling Street", "Chicago", "2005", "lincoln_park", NULL),
-    ("Theatre School", "2350 North Racine Avenue", "Chicago", "2013", "lincoln_park", NULL);
+    ("Mohawk House", "1712 North Mohawk Street", "Chicago", "2015", "lincoln_park", "/images/north-side/mohawk-house.jpg"),
+    ("Seigle House", "1856 North Mohawk Street", "Chicago", "2008", "lincoln_park", "/images/north-side/1856-north-mohawk-street.jpg"),
+    ("Orchard Willow", "1840 North Orchard Street", "Chicago", "2012", "lincoln_park", "/images/north-side/orchard-willow.jpg"),
+    ("Private Residence", "838 West Webster Avenue", "Chicago", "2005", "lincoln_park", "/images/north-side/838-west-webster-avenue.jpg"),
+    ("Nature Boardwalk at Lincoln Park Zoo", "North Stockton Drive", "Chicago", "2010", "lincoln_park", "/images/north-side/nature-boardwalk-lincoln-park-zoo.jpg"),
+    ("Searle Visitor Center", "2001 North Clark Street", "Chicago", "2018", "lincoln_park", "/images/north-side/searle-visitor-center.jpg"),
+    ("Pritzker Family Children's Zoo", "2001 North Clark Street", "Chicago", "2005", "lincoln_park", "/images/north-side/pritzker-childrens-zoo.jpg"),
+    ("Wrightwood 659", "659 West Wrightwood Avenue", "Chicago", "2018", "lincoln_park", "/images/north-side/659-wrightwood.jpg"),
+    ("Concrete Townhouse", "2465 North Burling Street", "Chicago", "2005", "lincoln_park", "/images/north-side/concrete-townhouse.jpg"),
+    ("Theatre School", "2350 North Racine Avenue", "Chicago", "2013", "lincoln_park", "/images/north-side/theater-school.jpg");
     
 
 -- North Side: Lakeview and North Center
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Lake Shore Drive Residence", "310 West Wellington Street", "Chicago", "2011", "lakeview_and_north_center", NULL),
-    ("Advocate Illinois Masonic Medical Center", "West Barry Avenue", "Chicago", "2015", "lakeview_and_north_center", NULL),
-    ("Center on Halsted", "3656 North Halsted Street", "Chicago", "2007", "lakeview_and_north_center", NULL),
-    ("Town Hall Apartments", "3600 North Halsted Street", "Chicago", "2014", "lakeview_and_north_center", NULL),
-    ("Lathrop Homes", "2000 West Diversey Parkway", "Chicago", "2019", "lakeview_and_north_center", NULL),
-    ("Claremont House", "3909 North Claremont Street", "Chicago", "2007", "lakeview_and_north_center", NULL),
-    ("WHM Boathouse at Clark Park", "3400 North Rockwell Street", "Chicago", "2013", "lakeview_and_north_center", NULL);
+    ("Lake Shore Drive Residence", "310 West Wellington Street", "Chicago", "2011", "lakeview_and_north_center", "/images/north-side/placeholder-image.jpg"),
+    ("Advocate Illinois Masonic Medical Center", "West Barry Avenue", "Chicago", "2015", "lakeview_and_north_center", "/images/north-side/masonic-medical-center.jpg"),
+    ("Center on Halsted", "3656 North Halsted Street", "Chicago", "2007", "lakeview_and_north_center", "/images/north-side/center-on-halsted.jpg"),
+    ("Town Hall Apartments", "3600 North Halsted Street", "Chicago", "2014", "lakeview_and_north_center", "/images/north-side/town-hall-apartments.jpg"),
+    ("Lathrop Homes", "2000 West Diversey Parkway", "Chicago", "2019", "lakeview_and_north_center", "/images/north-side/placeholder-image.jpg"),
+    ("Claremont House", "3909 North Claremont Street", "Chicago", "2007", "lakeview_and_north_center", "/images/north-side/claremont-house.jpg"),
+    ("WHM Boathouse at Clark Park", "3400 North Rockwell Street", "Chicago", "2013", "lakeview_and_north_center", "/images/north-side/wms-boathouse-at-clark-park.jpg");
     
     
 -- North Side: Other neighborhoods
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Argyle", "2575 West Argyle Street", "Chicago", "2011", "other_neighborhoods", NULL),
-    ("Yannell Net-Zero Energy Residence", "4895 North Ravenswood Avenue", "Chicago", "2009", "other_neighborhoods", NULL),
-    ("Doblin Residence", "5017 North Ravenswood Avenue", "Chicago", "2014", "other_neighborhoods", NULL),
-    ("Rogers Park Montessori School", "1800 West Balmoral Avenue", "Chicago", "2016", "other_neighborhoods", NULL),
-    ("Richard J. Klarchek Information Commons", "6501 North Kenmore Avenue", "Chicago", "2008", "other_neighborhoods", NULL),
-    ("Institute of Environmental Sustainability", "6349 North Kenmore Avenue", "Chicago", "2013", "other_neighborhoods", NULL);
+    ("Argyle", "2575 West Argyle Street", "Chicago", "2011", "other_neighborhoods", "/images/north-side/placeholder-image.jpg"),
+    ("Yannell Net-Zero Energy Residence", "4895 North Ravenswood Avenue", "Chicago", "2009", "other_neighborhoods", "/images/north-side/yannell-house.jpg"),
+    ("Doblin Residence", "5017 North Ravenswood Avenue", "Chicago", "2014", "other_neighborhoods", "/images/north-side/doblin-house.jpg"),
+    ("Rogers Park Montessori School", "1800 West Balmoral Avenue", "Chicago", "2016", "other_neighborhoods", "/images/north-side/rogers-park-montessori-school.jpg"),
+    ("Richard J. Klarchek Information Commons", "6501 North Kenmore Avenue", "Chicago", "2008", "other_neighborhoods", "/images/north-side/richard-j-klarcheck-information-commons.jpg"),
+    ("Institute of Environmental Sustainability", "6349 North Kenmore Avenue", "Chicago", "2013", "other_neighborhoods", "/images/north-side/institue-of-environmental-sustainability.jpg");
     
 
 -- West side: first_chapter
