@@ -62,16 +62,16 @@ VALUES
     ("Spertus Intitute", "610 South Michigan Avenue", "Chicago", "2007", "south_loop_and_chinatown", "/images/downtown/spertus-institute.jpg"),
     ("618 South Michigan Avenue Facade", "618 South Michigan Avenue", "Chicago", "2012", "south_loop_and_chinatown", "/images/downtown/618-south-michigan-avenue.jpg"),
     ("Student Life Center for East-West University", "829 South Wabash Avenue", "Chicago", "2013", "south_loop_and_chinatown", "/images/downtown/student-life-center-wabash.jpg"),
-    ("Nema Chicago", "1200 South Indiana Avenue", "Chicago", "2019", "south_loop_and_chinatown", NULL),
-    ("Soldier Field and North Burnham Park Redevelopment", "1410 Museum Campus Drive", "Chicago", "2003", "south_loop_and_chinatown", NULL),
-    ("Northerly Island", "1521 South Linn White Drive", "Chicago", "2015", "south_loop_and_chinatown", NULL),
-    ("Columbia College Chicago Media Production Center", "1600 South State Street", "Chicago", "2010", "south_loop_and_chinatown", NULL),
-    ("Perspective Charter School Rodney D. Joslin Campus", "1930 South Archer Avenue", "Chicago", "2004", "south_loop_and_chinatown", NULL),
-    ("CTA Cermak-McCormick Place Station", "12 East Cermak Road", "Chicago", "2015", "south_loop_and_chinatown", NULL),
-    ("McCormick Place West", "Cermak Road", "Chicago", "2007", "south_loop_and_chinatown", NULL),
-    ("Ping Tom Memorial Park Boathouse & Fieldhouse", "300 West 19th Street", "Chicago", "2013", "south_loop_and_chinatown", NULL),
-    ("Chinese American Service League Kam L. Liu Building", "2141 South Tan Court", "Chicago", "2004", "south_loop_and_chinatown", NULL),
-    ("Chinatown Branch Library", "2100 South Wentworth Avenue", "Chicago", "2015", "south_loop_and_chinatown", NULL);
+    ("Nema Chicago", "1200 South Indiana Avenue", "Chicago", "2019", "south_loop_and_chinatown", "/images/downtown/nema-chicago.jpg"),
+    ("Soldier Field and North Burnham Park Redevelopment", "1410 Museum Campus Drive", "Chicago", "2003", "south_loop_and_chinatown", "/images/downtown/soldier-field.jpg"),
+    ("Northerly Island", "1521 South Linn White Drive", "Chicago", "2015", "south_loop_and_chinatown", "/images/downtown/northerly-island.jpg"),
+    ("Columbia College Chicago Media Production Center", "1600 South State Street", "Chicago", "2010", "south_loop_and_chinatown", "/images/downtown/columbia-college-media-center.jpg"),
+    ("Perspective Charter School Rodney D. Joslin Campus", "1930 South Archer Avenue", "Chicago", "2004", "south_loop_and_chinatown", "/images/downtown/perspective-charter-school.jpg"),
+    ("CTA Cermak-McCormick Place Station", "12 East Cermak Road", "Chicago", "2015", "south_loop_and_chinatown", "/images/downtown/cta-cermak-mccormic-place-station.jpg"),
+    ("McCormick Place West", "Cermak Road", "Chicago", "2007", "south_loop_and_chinatown", "/images/downtown/mccormic-place-west.jpg"),
+    ("Ping Tom Memorial Park Boathouse & Fieldhouse", "300 West 19th Street", "Chicago", "2013", "south_loop_and_chinatown", "/images/downtown/ping-tom-boathouse-and-fieldhouse.jpg"),
+    ("Chinese American Service League Kam L. Liu Building", "2141 South Tan Court", "Chicago", "2004", "south_loop_and_chinatown", "/images/downtown/chinese-american-service-league.jpg"),
+    ("Chinatown Branch Library", "2100 South Wentworth Avenue", "Chicago", "2015", "south_loop_and_chinatown", "/images/downtown/chinatown-branch-library.jpg");
     
 
 -- North Side: River North
