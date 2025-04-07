@@ -1,15 +1,19 @@
 package com.example.chicagoarchitecture.controller;
 
+import com.example.chicagoarchitecture.model.Building;
 import com.example.chicagoarchitecture.service.BuildingDAO;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/district")
+@RequestMapping("/region")
 public class GenericDistrictController {
 
     private final BuildingDAO buildingDAO;
@@ -81,4 +85,25 @@ public class GenericDistrictController {
         DISTRICT_TITLES.put("northwest_and_west_suburbs", "Northwest and West Suburbs");
     }
 
+    @GetMapping("/{region}")
+    public String showRegion(@PathVariable String region, Model model) {
+        LinkedHashMap<String, String> subDistricts = DISTRICT_SUBDISTRICTS.get(region);
+
+        model.addAttribute("subDistricts", subDistricts);
+        model.addAttribute("region", region);
+
+        return "generic-region-page";
+    }
+
+    @GetMapping("/{region}/{district}")
+    public String showDistrict(@PathVariable String region, @PathVariable String district, Model model) {
+        List<Building> buildings = buildingDAO.getBuildingsFromDistrict(district);
+        String pageTitle = DISTRICT_TITLES.get(district);
+
+        model.addAttribute("buildings", buildings);
+        model.addAttribute("pageTitle", pageTitle);
+        model.addAttribute("pageHeader", pageTitle);
+
+        return "generic-page";
+    }
 }

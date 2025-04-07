@@ -23,7 +23,7 @@
     <h2>Manual Search</h2>
     <ul>
         <li th:each="district: ${chicagoDistricts}">
-            <a th:href="@{${district.value}}"
+            <a th:href="@{'region/' + ${district.value}}"
                th:text="${district.key}"></a>
         </li>
     </ul>
