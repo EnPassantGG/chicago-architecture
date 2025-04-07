@@ -157,55 +157,55 @@ VALUES
 -- West side: first_chapter
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("Independence Apartments and Branch Library", "4024 North Elston Avenue", "Chicago", "2019", "first_chapter", NULL),
-    ("Northeastern Illinois University El Centro Campus", "3390 North Avondale Avenue", "Chicago", "2014", "first_chapter", NULL),
-    ("Intrinsic School", "4540 West Belmont Avenue", "Chicago", "2014", "first_chapter", NULL),
-    ("Flexhouse", "2805 West Shakespeare Avenue", "Chicago", "2013", "first_chapter", NULL),
-    ("F10 House", "1919 North Keeler Avenue", "Chicago", "2004", "first_chapter", NULL),
-    ("Acero Roberto Clemente School", "2050 North Natchez Avenue", "Chicago", "2012", "first_chapter", NULL),
-    ("Oak Park Public Library", "834 West Lake Street", "Chicago", "2005", "first_chapter", NULL),
-    ("Christ the King Jesuit College Preparatory School", "5088 West Jackson Boulevard", "Chicago", "2010", "first_chapter", NULL),
-    ("By the Hand Club for Kids and Moving Everest Charter School", "415 North Laramie Avenue", "Chicago", "2015", "first_chapter", NULL),
-    ("Garfield Park Conservatory City Garden", "300 North Central Park Boulevard", "Chicago", "2007", "first_chapter", NULL),
-    ("Erie Elementary School", "1405 North Washtenaw Avenue", "Chicago", "2013", "first_chapter", NULL);
+    ("Independence Apartments and Branch Library", "4024 North Elston Avenue", "Chicago", "2019", "first_chapter", "/images/west-side/independence-branch-library.jpg"),
+    ("Northeastern Illinois University El Centro Campus", "3390 North Avondale Avenue", "Chicago", "2014", "first_chapter", "/images/west-side/northeaster-el-centro-campus.jpg"),
+    ("Intrinsic School", "4540 West Belmont Avenue", "Chicago", "2014", "first_chapter", "/images/west-side/intrinsic-schools.jpg"),
+    ("Flexhouse", "2805 West Shakespeare Avenue", "Chicago", "2013", "first_chapter", "/images/west-side/flexhouse.jpg"),
+    ("F10 House", "1919 North Keeler Avenue", "Chicago", "2004", "first_chapter", "/images/west-side/f10-house.jpg"),
+    ("Acero Roberto Clemente School", "2050 North Natchez Avenue", "Chicago", "2012", "first_chapter", "/images/west-side/acero-roberto-clemente-school.jpg"),
+    ("Oak Park Public Library", "834 West Lake Street", "Chicago", "2005", "first_chapter", "/images/west-side/oak-park-public-library.jpg"),
+    ("Christ the King Jesuit College Preparatory School", "5088 West Jackson Boulevard", "Chicago", "2010", "first_chapter", "/images/west-side/christ-the-king-college-prep.jpg"),
+    ("By the Hand Club for Kids and Moving Everest Charter School", "415 North Laramie Avenue", "Chicago", "2015", "first_chapter", "/images/west-side/by-the-hand-everest-charter-school.jpg"),
+    ("Garfield Park Conservatory City Garden", "300 North Central Park Boulevard", "Chicago", "2007", "first_chapter", "/images/west-side/garfield-park-conservatory.jpg"),
+    ("Erie Elementary School", "1405 North Washtenaw Avenue", "Chicago", "2013", "first_chapter", "/images/west-side/erie-elementary-school.jpg");
     
 
 -- West side: second_chapter
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("The 606", "Bloomingdale Avenue", "Chicago", "2014", "second_chapter", NULL),
-    ("Leavitt Residence", "1804 North Leavitt Street", "Chicago", "2007", "second_chapter", NULL),
-    ("Finfrock House", "2318 North Oakley Avenue", "Chicago", "2008", "second_chapter", NULL),
-    ("Urban Sandbox", "1615 North Wolcott Avenue", "Chicago", "2009", "second_chapter", NULL),
-    ("1617 North Wolcott", "1617 North Wolcott Avenue", "Chicago", "2009", "second_chapter", NULL),
-    ("Wood House", "1736 North Wood Street", "Chicago", "2013", "second_chapter", NULL),
-    ("Chicago Townhouse", "1808 North Paulina Street", "Chicago", "2004", "second_chapter", NULL),
-    ("Fletcher Jones Audi", "1523 West North Avenue", "Chicago", "2010", "second_chapter", NULL),
-    ("1161 West Division", "1161 West Division Street", "Chicago", "2014", "second_chapter", NULL),
-    ("Briack Weave House", "1922 West Race Avenue", "Chicago", "2009", "second_chapter", NULL),
-    ("Upton's Naturals", "2054 West Grand Avenue", "Chicago", "2015", "second_chapter", NULL);
+    ("The 606", "Bloomingdale Avenue", "Chicago", "2014", "second_chapter", "/images/west-side/the-606.jpg"),
+    ("Leavitt Residence", "1804 North Leavitt Street", "Chicago", "2007", "second_chapter", "/images/west-side/leavitt-residence.jpg"),
+    ("Finfrock House", "2318 North Oakley Avenue", "Chicago", "2008", "second_chapter", "/images/west-side/finfrock-house.jpg"),
+    ("Urban Sandbox", "1615 North Wolcott Avenue", "Chicago", "2009", "second_chapter", "/images/west-side/urban-sandbox.jpg"),
+    ("1617 North Wolcott", "1617 North Wolcott Avenue", "Chicago", "2009", "second_chapter", "/images/west-side/1617-north-wolcott.jpg"),
+    ("Wood House", "1736 North Wood Street", "Chicago", "2013", "second_chapter", "/images/west-side/wood-house.jpg"),
+    ("Chicago Townhouse", "1808 North Paulina Street", "Chicago", "2004", "second_chapter", "/images/west-side/1808-north-paulina-street.jpg"),
+    ("Fletcher Jones Audi", "1523 West North Avenue", "Chicago", "2010", "second_chapter", "/images/west-side/fletcher-jones-audi.jpg"),
+    ("1161 West Division", "1161 West Division Street", "Chicago", "2014", "second_chapter", "/images/west-side/1611-west-division-street.jpg"),
+    ("Briack Weave House", "1922 West Race Avenue", "Chicago", "2009", "second_chapter", "/images/west-side/brick-weave-house.jpg"),
+    ("Upton's Naturals", "2054 West Grand Avenue", "Chicago", "2015", "second_chapter", "/images/west-side/placeholder-image.jpg");
     
     
 -- West side: third_chapter
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("CTA Morgan Street Station", "958 West Lake Street", "Chicago", "2012", "third_chapter", NULL),
-    ("Skybridge", "737 West Washington Boulevard", "Chicago", "2003", "third_chapter", NULL),
-    ("National Hellenic Museum", "333 South Halsted Street", "Chicago", "2008", "third_chapter", NULL),
-    ("Mary Bartelme Park", "115 South Sangamon Street", "Chicago", "2012", "third_chapter", NULL),
-    ("Hubbard Street Dance Chicago", "1147 West Jackson Boulevard", "Chicago", "2006", "third_chapter", NULL);
+    ("CTA Morgan Street Station", "958 West Lake Street", "Chicago", "2012", "third_chapter", "/images/west-side/cta-morgan-street-station.jpg"),
+    ("Skybridge", "737 West Washington Boulevard", "Chicago", "2003", "third_chapter", "/images/west-side/skybridge.jpg"),
+    ("National Hellenic Museum", "333 South Halsted Street", "Chicago", "2008", "third_chapter", "/images/west-side/national-hellenic-museum.jpg"),
+    ("Mary Bartelme Park", "115 South Sangamon Street", "Chicago", "2012", "third_chapter", "/images/west-side/mary-bartelme-park.jpg"),
+    ("Hubbard Street Dance Chicago", "1147 West Jackson Boulevard", "Chicago", "2006", "third_chapter", "/images/west-side/hubbard-street-dance.jpg");
     
     
 -- West side: fourth_chapter
 INSERT INTO chicagoarchitecture.building (name, address, city, creation_year, district, image_path)
 VALUES 
-    ("UIC Student Recreation Facility", "737 South Halsted Street", "Chicago", "2006", "fourth_chapter", NULL),
-    ("UIC Forum", "725 West Roosevelt Road", "Chicago", "2008", "fourth_chapter", NULL),
-    ("UIC Skyspace", "Halsted and Roosevelt", "Chicago", "2006", "fourth_chapter", NULL),
-    ("Taylor Street Branch LIbrary", "1342 West Taylor Street", "Chicago", "2019", "fourth_chapter", NULL),
-    ("Rush University Medical Center", "1620 West Harrison Street", "Chicago", "2012", "fourth_chapter", NULL),
-    ("Chicago Children's Advocacy Center", "1240 South Damen Avenue", "Chicago", "2015", "fourth_chapter", NULL),
-    ("A Safe Haven Foundation", "2750 West Roosevelt Road", "Chicago", "2006", "fourth_chapter", NULL);
+    ("UIC Student Recreation Facility", "737 South Halsted Street", "Chicago", "2006", "fourth_chapter", "/images/west-side/uic-student-recreation-facility.jpg"),
+    ("UIC Forum", "725 West Roosevelt Road", "Chicago", "2008", "fourth_chapter", "/images/west-side/uic-forum.jpg"),
+    ("UIC Skyspace", "Halsted and Roosevelt", "Chicago", "2006", "fourth_chapter", "/images/west-side/uic-skyspace.jpg"),
+    ("Taylor Street Branch Library", "1342 West Taylor Street", "Chicago", "2019", "fourth_chapter", "/images/west-side/taylor-street-branch-library.jpg"),
+    ("Rush University Medical Center", "1620 West Harrison Street", "Chicago", "2012", "fourth_chapter", "/images/west-side/rush-university-medical-center.jpg"),
+    ("Chicago Children's Advocacy Center", "1240 South Damen Avenue", "Chicago", "2015", "fourth_chapter", "/images/west-side/childrens-advocacy-center.jpg"),
+    ("A Safe Haven Foundation", "2750 West Roosevelt Road", "Chicago", "2006", "fourth_chapter", "/images/west-side/safe-haven-foundation.jpg");
     
     
 -- South side: chapter_16

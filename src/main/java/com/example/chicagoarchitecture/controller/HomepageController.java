@@ -31,8 +31,8 @@ public class HomepageController {
         chicagoDistricts.put("Downtown", "downtown");
         chicagoDistricts.put("North Side", "north_side");
         chicagoDistricts.put("West Side", "west_side");
-        chicagoDistricts.put("South Side", "south_side");
-        chicagoDistricts.put("Suburbs", "suburbs");
+        chicagoDistricts.put("South Side (images soon!)", "south_side");
+        chicagoDistricts.put("Suburbs (images soon!)", "suburbs");
         model.addAttribute("chicagoDistricts", chicagoDistricts);
 
         return "homepage";
