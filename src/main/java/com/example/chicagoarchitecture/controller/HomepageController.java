@@ -45,7 +45,7 @@ public class HomepageController {
         model.addAttribute("pageTitle", "Search Results");
         model.addAttribute("pageHeader", "Search Results");
 
-        return "generic-page";
+        return "generic-district-page";
     }
 
     @GetMapping("/about")

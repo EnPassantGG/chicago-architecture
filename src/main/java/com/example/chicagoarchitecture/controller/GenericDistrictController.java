@@ -22,72 +22,70 @@ public class GenericDistrictController {
         this.buildingDAO = buildingDAO;
     }
 
-    private static final Map<String, LinkedHashMap<String, String>> DISTRICT_SUBDISTRICTS = Map.of(
-            "downtown", new LinkedHashMap<>() {{
-                put("Millennium Park", "millennium_park");
-                put("Lakeshore East", "lakeshore_east");
-                put("The Loop (East)", "the_loop_east");
-                put("The Loop (West)", "the_loop_west");
-                put("South Loop & Chinatown", "south_loop_and_chinatown");
-            }},
-            "north_side", new LinkedHashMap<>() {{
-                put("River North", "river_north");
-                put("Streeterville", "streeterville");
-                put("Near North Side", "near_north_side");
-                put("Lincoln Park", "lincoln_park");
-                put("Lakeview & North Center", "lakeview_and_north_center");
-                put("Other neighborhoods", "other_neighborhoods");
-            }},
-            "west_side", new LinkedHashMap<>() {{
-                put("General West Side", "first_chapter");
-                put("Bucktown, Wicker Park, & West town", "second_chapter");
-                put("West Loop", "third_chapter");
-                put("University Village, Lawndale, & Pilsen", "fourth_chapter");
-            }},
-            "south_side", new LinkedHashMap<>() {{
-                put("Bronzeville", "chapter_16");
-                put("Hyde Park", "chapter_17");
-                put("Grand Crossing & South Shore", "chapter_18");
-                put("Other Neighborhoods", "chapter_19");
-            }},
-            "suburbs", new LinkedHashMap<>() {{
-                put("North Suburbs", "north_suburbs");
-                put("Northwest and West Suburbs", "northwest_and_west_suburbs");
-            }}
+    static class DistrictData {
+        String title;
+        String uniqueString;
+
+        DistrictData(String title, String uniqueString) {
+            this.title = title;
+            this.uniqueString = uniqueString;
+        }
+    }
+
+    private static final Map<String, List<DistrictData>> DISTRICT_SUBDISTRICTS = Map.of(
+            "downtown", List.of(
+                    new DistrictData("Millennium Park", "millennium_park"),
+                    new DistrictData("Lakeshore East", "lakeshore_east"),
+                    new DistrictData("The Loop (East)", "the_loop_east"),
+                    new DistrictData("The Loop (West)", "the_loop_west"),
+                    new DistrictData("South Loop & Chinatown", "south_loop_and_chinatown")
+            ),
+            "north_side", List.of(
+                    new DistrictData("River North", "river_north"),
+                    new DistrictData("Streeterville", "streeterville"),
+                    new DistrictData("Near North Side", "near_north_side"),
+                    new DistrictData("Lincoln Park", "lincoln_park"),
+                    new DistrictData("Lakeview & North Center", "lakeview_and_north_center"),
+                    new DistrictData("Other neighborhoods", "other_neighborhoods")
+            ),
+            "west_side", List.of(
+                    new DistrictData("General West Side", "first_chapter"),
+                    new DistrictData("Bucktown, Wicker Park, & West town", "second_chapter"),
+                    new DistrictData("West Loop", "third_chapter"),
+                    new DistrictData("University Village, Lawndale, & Pilsen", "fourth_chapter")
+            ),
+            "south_side", List.of(
+                    new DistrictData("Bronzeville", "chapter_16"),
+                    new DistrictData("Hyde Park", "chapter_17"),
+                    new DistrictData("Grand Crossing & South Shore", "chapter_18"),
+                    new DistrictData("Other Neighborhoods", "chapter_19")
+            ),
+            "suburbs", List.of(
+                    new DistrictData("North Suburbs", "north_suburbs"),
+                    new DistrictData("Northwest and West Suburbs", "northwest_and_west_suburbs")
+            )
     );
 
     private static final Map<String, String> DISTRICT_TITLES = new LinkedHashMap<>();
+
     static {
-        DISTRICT_TITLES.put("millennium_park", "Millennium Park");
-        DISTRICT_TITLES.put("lakeshore_east", "Lakeshore East");
-        DISTRICT_TITLES.put("the_loop_east", "The Loop (East)");
-        DISTRICT_TITLES.put("the_loop_west", "The Loop (West)");
-        DISTRICT_TITLES.put("south_loop_and_chinatown", "South Loop & Chinatown");
-
-        DISTRICT_TITLES.put("river_north", "River North");
-        DISTRICT_TITLES.put("streeterville", "Streeterville");
-        DISTRICT_TITLES.put("near_north_side", "Near North Side");
-        DISTRICT_TITLES.put("lincoln_park", "Lincoln Park");
-        DISTRICT_TITLES.put("lakeview_and_north_center", "Lakeview & North Center");
-        DISTRICT_TITLES.put("other_neighborhoods", "Other Neighborhoods");
-
-        DISTRICT_TITLES.put("first_chapter", "General West Side");
-        DISTRICT_TITLES.put("second_chapter", "Bucktown, Wicker Park, & West town");
-        DISTRICT_TITLES.put("third_chapter", "West Loop");
-        DISTRICT_TITLES.put("fourth_chapter", "University Village, Lawndale, & Pilsen");
-
-        DISTRICT_TITLES.put("chapter_16", "Bronzeville");
-        DISTRICT_TITLES.put("chapter_17", "Hyde Park");
-        DISTRICT_TITLES.put("chapter_18", "Grand Crossing & South Shore");
-        DISTRICT_TITLES.put("chapter_19", "Other Neighborhoods");
-
-        DISTRICT_TITLES.put("north_suburbs", "North Suburbs");
-        DISTRICT_TITLES.put("northwest_and_west_suburbs", "Northwest and West Suburbs");
+        for (List<DistrictData> districtList : DISTRICT_SUBDISTRICTS.values()) {
+            for (DistrictData districtData : districtList) {
+                DISTRICT_TITLES.put(districtData.uniqueString, districtData.title);
+            }
+        }
     }
 
     @GetMapping("/{region}")
     public String showRegion(@PathVariable String region, Model model) {
-        LinkedHashMap<String, String> subDistricts = DISTRICT_SUBDISTRICTS.get(region);
+        List<DistrictData> subDistrictsList = DISTRICT_SUBDISTRICTS.get(region);
+        Map<String, String> subDistricts = new LinkedHashMap<>();
+
+        if (subDistrictsList != null) {
+            for (DistrictData districtData : subDistrictsList) {
+                subDistricts.put(districtData.title, districtData.uniqueString);
+            }
+        }
 
         model.addAttribute("subDistricts", subDistricts);
         model.addAttribute("region", region);
@@ -104,6 +102,6 @@ public class GenericDistrictController {
         model.addAttribute("pageTitle", pageTitle);
         model.addAttribute("pageHeader", pageTitle);
 
-        return "generic-page";
+        return "generic-district-page";
     }
 }

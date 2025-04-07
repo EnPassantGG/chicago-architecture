@@ -2,11 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Generic Title</title>
+    <title th:text="${region}"></title>
 </head>
 
 <body>
-    <h1>Generic Saying</h1>
+    <h1 th:text="${region}"></h1>
     <ul>
         <li th:each="subDistrict: ${subDistricts}">
             <a th:href="@{'/region/' + ${region} + '/' + ${subDistrict.value}}"
