@@ -24,11 +24,11 @@ public class GenericDistrictController {
 
     static class DistrictData {
         String title;
-        String uniqueString;
+        String path;
 
-        DistrictData(String title, String uniqueString) {
+        DistrictData(String title, String path) {
             this.title = title;
-            this.uniqueString = uniqueString;
+            this.path = path;
         }
     }
 
@@ -71,7 +71,7 @@ public class GenericDistrictController {
     static {
         for (List<DistrictData> districtList : DISTRICT_SUBDISTRICTS.values()) {
             for (DistrictData districtData : districtList) {
-                DISTRICT_TITLES.put(districtData.uniqueString, districtData.title);
+                DISTRICT_TITLES.put(districtData.path, districtData.title);
             }
         }
     }
@@ -83,7 +83,7 @@ public class GenericDistrictController {
 
         if (subDistrictsList != null) {
             for (DistrictData districtData : subDistrictsList) {
-                subDistricts.put(districtData.title, districtData.uniqueString);
+                subDistricts.put(districtData.title, districtData.path);
             }
         }
 
