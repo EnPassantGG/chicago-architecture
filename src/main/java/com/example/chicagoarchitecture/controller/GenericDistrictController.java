@@ -88,7 +88,7 @@ public class GenericDistrictController {
         }
 
         model.addAttribute("subDistricts", subDistricts);
-        model.addAttribute("region", region);
+        model.addAttribute("region", toTitleCase(region));
 
         return "generic-region-page";
     }
@@ -103,5 +103,18 @@ public class GenericDistrictController {
         model.addAttribute("pageHeader", pageTitle);
 
         return "generic-district-page";
+    }
+
+    private String toTitleCase(String input) {
+        String[] words = input.split("_");
+        StringBuilder sb = new StringBuilder();
+        for (String word : words) {
+            if (!word.isEmpty()) {
+                sb.append(Character.toUpperCase(word.charAt(0))); // first char to upper
+                sb.append(word.substring(1));           // add rest of word to sb
+                sb.append(" ");                                   // add a space
+            }
+        }
+        return sb.toString().trim();
     }
 }
