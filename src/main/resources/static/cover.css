@@ -48,3 +48,14 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+/*
+ * Additional things
+ * TODO: The text on the dropdown is blurry
+ */
+.dropdown-toggle, .dropdown-menu, .dropdown-item {
+  text-rendering: optimizeLegibility;
+  font-weight: 600;
+  font-size: 1rem;
+  image-rendering: crisp-edges;
+}
