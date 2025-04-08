@@ -66,4 +66,9 @@ public class HomepageController {
         return "bootstrap-demo";
     }
 
+    @GetMapping("/bootstrap-about")
+    public String bootstrapAbout() {
+        return "bootstrap-about";
+    }
+
 }
