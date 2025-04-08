@@ -61,4 +61,9 @@ public class HomepageController {
         return "personal_recommendations";
     }
 
+    @GetMapping("/bootstrap-demo")
+    public String bootstrapDemo() {
+        return "bootstrap-demo";
+    }
+
 }
