@@ -50,7 +50,7 @@ body {
 }
 
 /*
- * Additional things
+ * Attempt to get rid of blurriness of dropdown menu
  * TODO: The text on the dropdown is blurry
  */
 .dropdown-toggle, .dropdown-menu, .dropdown-item {
